@@ -53,3 +53,9 @@ img {
     /* border: 1px solid black; NEED TO ADJUST TO IMAGE SIZE*/
 }
 
+/* Buttons to select answer for displayed flag */
+
+
+.flag-options {
+    display: grid;
+}
