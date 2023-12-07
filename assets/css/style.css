@@ -22,6 +22,7 @@ body {
 
 p {
     padding: 0 0 10px 0;
+    font-weight: 500;
 }
 
 img {
@@ -88,6 +89,7 @@ img {
 
 /* Message for total score */
 .message-text {
+    /* font-weight: 700; */
     padding: 10px 0 0 0;
 }
 
