@@ -51,6 +51,7 @@ img {
 #flag-display {
     text-align: center;
     /* border: 1px solid black; NEED TO ADJUST TO IMAGE SIZE*/
+    padding: 0 0 10px 0;
 }
 
 /* Buttons to select answer for displayed flag */
@@ -58,4 +59,15 @@ img {
 
 .flag-options {
     display: grid;
+    gap: 10px;
+}
+
+/* footer {
+    margin-bottom: 20px;
+} */
+
+#footer-div {
+    color:aqua;
+    display: block;
+    margin-bottom: 20px;
 }
