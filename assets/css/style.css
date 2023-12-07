@@ -17,8 +17,12 @@ body {
 }
 
 .heading {
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0 20px 0;
 }
+
+/* p {
+    padding: 0 0 10px 0;
+} */
 
 /* Game area styles */
 .game-area {
@@ -29,4 +33,5 @@ body {
     margin-right: auto;
     background-color: white;
     border-radius: 5px;
+    padding: 15px 0 15px 0;
 }
