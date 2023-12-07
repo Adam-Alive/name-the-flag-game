@@ -24,7 +24,12 @@ p {
     padding: 0 0 10px 0;
 }
 
-/* Game area styles */
+img {
+    height: 75%;
+    width: 75%;
+}
+
+/* Game area */
 .game-area {
     width: 85%;
     max-width: 800px;
@@ -36,8 +41,15 @@ p {
     padding: 15px 0 15px 0;
 }
 
+/* Question and score tally */
 .tally-display {
     display: flex;
     justify-content:space-around;
+}
+
+/* Flag display */
+#flag-display {
+    text-align: center;
+    /* border: 1px solid black; NEED TO ADJUST TO IMAGE SIZE*/
 }
 
