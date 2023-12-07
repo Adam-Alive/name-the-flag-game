@@ -69,8 +69,22 @@ img {
     background-color: rgb(34, 135, 202);
     padding: 2px 0 2px 0;
 }
-    
-    
+
+/* Buttons to navigate game */    
+#game-butn-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-btn {
+    width: 100px;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+}
 
 /* Footer */
 footer {
