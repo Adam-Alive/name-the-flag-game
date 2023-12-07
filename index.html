@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Name The Flag Game</title>
-</head>
+  </head>
 
-<body>
-    <h1 class="heading">Name The Flag</h1>   
+  <body>
+    <h1 class="heading">Name The Flag</h1>
     <div class="game-area">
-        <div class="game-text">
-            <p>Welcome to this fun quiz to test your knowledge
-                of flags across the world.<p>
-            <p>20 questions... How many will you get...?</p>
-        </div>
-        <div class="tally-area">
-            <p><span id="question-number">Question 1 / 20 </span>
-            <span id="score"> Score: 0</span></p>
-        </div>
-        <div id="flag-display">SHOW FLAG</div>
-        <div id="options-container" class="options">
-            <button data-type="submit" id="option1"  class="btn">Country 1</button>
-            <button data-type="submit" id="option2" class="btn">Country 2</button>
-            <button data-type="submit" id="option3" class="btn">Country 3</button>
-        </div>
-        <button data-type="submit" id="next" class="btn btn--big">Next</button>
-        <button data-type="submit" id="restart" class="btn btn--big">Restart</button>
-        <div id="score-message" class="game-text">
-           <p><span>Congratulations, your total score is </span>
-            <span id="total-score">Total Score</span></p>
-            <button data-type="submit" id="reset" class="btn btn--big">Play Again</button>
-        </div>        
+      <div class="game-text">
+        <p>
+          Welcome to this fun quiz to test your knowledge of flags around the
+          world.
+        </p>
+        <p>How many will you get out of 20?</p>
+      </div>
+      <div class="tally-area">
+        <p class="tally-display">
+          <span id="question-number">Question 1 / 20 </span>
+          <span id="score"> Score: 0</span>
+        </p>
+      </div>
+      <div id="flag-display">SHOW FLAG</div>
+      <div id="options-container" class="options">
+        <button data-type="submit" id="option1" class="btn">Country 1</button>
+        <button data-type="submit" id="option2" class="btn">Country 2</button>
+        <button data-type="submit" id="option3" class="btn">Country 3</button>
+      </div>
+      <button data-type="submit" id="next" class="btn btn--big">Next</button>
+      <button data-type="submit" id="restart" class="btn btn--big">
+        Restart
+      </button>
+      <div id="score-message" class="game-text">
+        <p>
+          <span>Congratulations, your total score is </span>
+          <span id="total-score">Total Score</span>
+        </p>
+        <button data-type="submit" id="reset" class="btn btn--big">
+          Play Again
+        </button>
+      </div>
     </div>
 
     <footer>
-        <div>© Adam Alive 2023</div>
+      <div>© Adam Alive 2023</div>
     </footer>
 
-
-
-
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

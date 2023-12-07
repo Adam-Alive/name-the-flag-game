@@ -20,9 +20,9 @@ body {
     padding: 10px 0 20px 0;
 }
 
-/* p {
+p {
     padding: 0 0 10px 0;
-} */
+}
 
 /* Game area styles */
 .game-area {
@@ -35,3 +35,9 @@ body {
     border-radius: 5px;
     padding: 15px 0 15px 0;
 }
+
+.tally-display {
+    display: flex;
+    justify-content:space-around;
+}
+
