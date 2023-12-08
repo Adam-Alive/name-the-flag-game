@@ -27,7 +27,7 @@ h1 {
 p {
     padding: 0 0 10px 0;
     font-weight: 500;
-    color: grgb(10, 13, 17);
+    color: rgb(10, 13, 17);
 }
 
 img {
@@ -51,6 +51,7 @@ img {
 .tally-display {
     display: flex;
     justify-content:space-around;
+    font-weight: 700;
 }
 
 /* Flag display */
@@ -104,8 +105,8 @@ img {
 
 /* Message for total score */
 .message-text {
-    /* font-weight: 700; */
-    padding: 10px 0 0 0;
+    font-weight: 700;
+    padding: 10px 0 10px 0;    
 }
 
 /* Footer */
