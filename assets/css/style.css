@@ -73,13 +73,13 @@ img {
     height: 2rem;
     border-radius: 5px;
     color: white;
-    background-color: rgb(34, 135, 202);
+    background-color: rgb(61, 61, 245);
     padding: 2px 0 2px 0;
 }
 
 .flag-btn:active,
 .flag-btn:hover {
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(34, 135, 202);
 }
 
 /* Buttons to navigate game */
@@ -95,12 +95,12 @@ img {
     height: 2rem;
     border-radius: 5px;
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(34, 135, 202);
 }
 
 .game-btn:active,
 .game-btn:hover {
-    background-color: rgb(34, 135, 202);
+    background-color: rgb(61, 61, 245);
 }
 
 /* Message for total score */
