@@ -70,7 +70,7 @@ img {
 
 .flag-btn {
     width: 200px;
-    height: 1.5rem;
+    height: 2rem;
     border-radius: 5px;
     color: white;
     background-color: rgb(34, 135, 202);
@@ -92,7 +92,7 @@ img {
 
 .game-btn {
     width: 100px;
-    height: 2.5rem;
+    height: 2rem;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 255);
