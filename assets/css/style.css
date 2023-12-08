@@ -124,18 +124,7 @@ footer {
 
     /* General styles */
     img {
-        height: 45%;
-        width: 45%;
+        height: 35%;
+        width: 35%;
     }
-
-
 }
-
-
-
-/* Large devices (laptops and desktops 992px and higher) */
-@media screen and (min-width: 992px) {}
-
-
-/* Large desktops 1200px and higher */
-@media screen and (min-width: 1200px) {}
