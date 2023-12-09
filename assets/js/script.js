@@ -11,5 +11,6 @@ const flagData = [
     flag: 'aland-islands.webp',
     country: 'Aland Islands'
 },
-]
 
+'Test'
+]
