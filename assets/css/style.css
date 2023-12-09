@@ -55,7 +55,7 @@ img {
 }
 
 /* Flag display */
-#flag-display {
+#current-flag {
     text-align: center;
     /* border: 1px solid black; NEED TO ADJUST TO IMAGE SIZE */
     padding: 0 0 10px 0;
@@ -83,7 +83,7 @@ img {
 }
 
 /* Buttons to navigate game */
-#game-butn-container {
+#game-btn-container {
     display: grid;
     gap: 20px;
     justify-content: center;
