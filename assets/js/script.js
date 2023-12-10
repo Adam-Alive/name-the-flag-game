@@ -44,31 +44,32 @@ const flagData = [
 
 
 
-  
-]
+
+];
 // Last line of dictionary directly above this line
 
 // Code starts here
 // Let the DOM finish loading before running the game
 // Get button elements and add event listeners to them
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
+    console.log(buttons);
 });
-console.log(buttons);
+;
 
 
 function displayCurrentFlag() {
     console.log(flagData[(Math.floor(Math.random() * flagData.length))]);
-    
+
 }
 displayCurrentFlag();
 
-function displaySecondCountry(){
+function displaySecondCountry() {
 
 }
 
-function displayThirdCountry(){
+function displayThirdCountry() {
 
 }
 
@@ -93,7 +94,7 @@ function totalScoreMessage() {
 }
 
 function restartGame() {
-    
+
 }
 
 
