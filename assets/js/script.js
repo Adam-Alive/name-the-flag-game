@@ -1,6 +1,3 @@
-console.log('Connected!');
-
-
 /**Flag and Country Dictionary */
 const flagData = [
     {
@@ -38,11 +35,19 @@ const flagData = [
     },
     {
         flag: 'antigua-and-barbuda.webp',
-        country: 'Antingua and Barbuda',
+        country: 'Antigua and Barbuda',
     },
     {
         flag: 'argentina.webp',
         country: 'Argentina',
     },
 
-];
+
+
+  
+]
+/**Last line of dictionary directly above this line */
+
+/** Code Commences Here */
+console.log(flagData);
+
