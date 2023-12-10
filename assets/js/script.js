@@ -1,46 +1,46 @@
 // Flag and Country Dictionary
 const flagData = [
-  {
-    flag: "afghanistan.webp",
-    country: "Afghanistan",
-  },
-  {
-    flag: "aland-islands.webp",
-    country: "Aland Islands",
-  },
+    {
+        flag: "afghanistan.webp",
+        country: "Afghanistan",
+    },
+    {
+        flag: "aland-islands.webp",
+        country: "Aland Islands",
+    },
 
-  {
-    flag: "albania.webp",
-    country: "Albania",
-  },
-  {
-    flag: "american-samoa.webp",
-    country: "American Samoa",
-  },
-  {
-    flag: "andorra.webp",
-    country: "Andorra",
-  },
-  {
-    flag: "angola.webp",
-    country: "Angola",
-  },
-  {
-    flag: "anguilla.webp",
-    country: "Anguilla",
-  },
-  {
-    flag: "antarctica.webp",
-    country: "Antarctica",
-  },
-  {
-    flag: "antigua-and-barbuda.webp",
-    country: "Antigua and Barbuda",
-  },
-  {
-    flag: "argentina.webp",
-    country: "Argentina",
-  },
+    {
+        flag: "albania.webp",
+        country: "Albania",
+    },
+    {
+        flag: "american-samoa.webp",
+        country: "American Samoa",
+    },
+    {
+        flag: "andorra.webp",
+        country: "Andorra",
+    },
+    {
+        flag: "angola.webp",
+        country: "Angola",
+    },
+    {
+        flag: "anguilla.webp",
+        country: "Anguilla",
+    },
+    {
+        flag: "antarctica.webp",
+        country: "Antarctica",
+    },
+    {
+        flag: "antigua-and-barbuda.webp",
+        country: "Antigua and Barbuda",
+    },
+    {
+        flag: "argentina.webp",
+        country: "Argentina",
+    },
 ];
 // Last line of dictionary directly above this line
 
@@ -49,27 +49,28 @@ const flagData = [
 // Get button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByTagName("button");
-  console.log(buttons);
+    let buttons = document.getElementsByTagName("button");
+    console.log(buttons);
 });
 
+// Randomly selects a flag-country pair
 function displayCurrentFlag() {
-  console.log(flagData[Math.floor(Math.random() * flagData.length)]);
+    console.log(flagData[Math.floor(Math.random() * flagData.length)]);
 }
 displayCurrentFlag();
 
-function displaySecondCountry() {}
+function displaySecondCountry() { }
 
-function displayThirdCountry() {}
+function displayThirdCountry() { }
 
-function shuffleQuestions() {}
+function shuffleQuestions() { }
 
-function correctAnswer() {}
+function correctAnswer() { }
 
-function incorrectAnswer() {}
+function incorrectAnswer() { }
 
-function nextQuestion() {}
+function nextQuestion() { }
 
-function totalScoreMessage() {}
+function totalScoreMessage() { }
 
-function restartGame() {}
+function restartGame() { }
