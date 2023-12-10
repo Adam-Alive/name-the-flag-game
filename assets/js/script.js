@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(buttons);
 });
 
-// Randomly selects a flag-country pair
+// Randomly selects a flag-country pair - does so as a function, but not when variable
 function displayCurrentFlag() {
     let currentFlag = (flagData[Math.floor(Math.random() * flagData.length)]);
-    console.log(currentFlag);
+    console.log(currentFlag.country);
 }
 
 
