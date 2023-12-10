@@ -46,7 +46,9 @@ const flagData = [
 
 // Code starts here
 // Let the DOM finish loading before running the game
-// Get button elements and add event listeners to them
+// On page load, the first flag and three countries will be displayed
+// User clicks on a country name to answer
+// Not sure about listening for button clicks??
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
