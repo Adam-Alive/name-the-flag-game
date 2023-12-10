@@ -57,9 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Randomly selects a flag-country pair
 function displayCurrentFlag() {
-    console.log(flagData[Math.floor(Math.random() * flagData.length)]);
+    let currentFlag = (flagData[Math.floor(Math.random() * flagData.length)]);
+    console.log(currentFlag);
 }
-displayCurrentFlag();
+
+
+
 
 function displaySecondCountry() { }
 
