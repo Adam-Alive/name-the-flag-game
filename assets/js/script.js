@@ -5,12 +5,44 @@ console.log('Connected!');
 const flagData = [
     {
         flag: 'afghanistan.webp',
-    country: 'Afghanistan'
-},
-{
-    flag: 'aland-islands.webp',
-    country: 'Aland Islands'
-},
+        country: 'Afghanistan'
+    },
+    {
+        flag: 'aland-islands.webp',
+        country: 'Aland Islands'
+    },
 
-'Test'
-]
+    {
+        flag: 'albania.webp',
+        country: 'Albania',
+    },
+    {
+        flag: 'american-samoa.webp',
+        country: 'American Samoa',
+    },
+    {
+        flag: 'andorra.webp',
+        country: 'Andorra',
+    },
+    {
+        flag: 'angola.webp',
+        country: 'Angola',
+    },
+    {
+        flag: 'anguilla.webp',
+        country: 'Anguilla',
+    },
+    {
+        flag: 'antarctica.webp',
+        country: 'Antarctica',
+    },
+    {
+        flag: 'antigua-and-barbuda.webp',
+        country: 'Antingua and Barbuda',
+    },
+    {
+        flag: 'argentina.webp',
+        country: 'Argentina',
+    },
+
+];
