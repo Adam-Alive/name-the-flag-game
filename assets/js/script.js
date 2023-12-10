@@ -49,5 +49,11 @@ const flagData = [
 /**Last line of dictionary directly above this line */
 
 /** Code Commences Here */
-console.log(flagData);
+// console.log(flagData);
+
+function displayCurrentFlag() {
+    console.log(flagData[(Math.floor(Math.random() * flagData.length))]);
+}
+displayCurrentFlag()
+
 
