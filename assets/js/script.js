@@ -1,4 +1,4 @@
-/**Flag and Country Dictionary */
+// Flag and Country Dictionary
 const flagData = [
     {
         flag: 'afghanistan.webp',
@@ -46,10 +46,17 @@ const flagData = [
 
   
 ]
-/**Last line of dictionary directly above this line */
+// Last line of dictionary directly above this line
 
-/** Code Commences Here */
-// console.log(flagData);
+// Code starts here
+// Let the DOM finish loading before running the game
+// Get button elements and add event listeners to them
+
+document.addEventListener('DOMContentLoaded', function() {
+    let buttons = document.getElementsByTagName('button');
+});
+console.log(buttons);
+
 
 function displayCurrentFlag() {
     console.log(flagData[(Math.floor(Math.random() * flagData.length))]);
