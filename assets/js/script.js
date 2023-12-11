@@ -55,8 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(buttons);
 });
 
-
-
 for (let country of flagData) {
     console.log(country.country);
 }
@@ -71,13 +69,14 @@ function displayCurrentFlag() {
 }
 displayCurrentFlag();
 
-
-let testCountryDiv = document.getElementById('current-flag-country').innerHTML;
+let testCountryDiv = document.getElementById("current-flag-country").innerHTML;
 console.log(testCountryDiv);
 
-
-// let countryNameDiv = document.getElementById('country');
-
+// Test random select function
+function testCountrySelect() {
+    let currentCountry = country(Math.floor(Math.random() * country.length));
+    console.log(currentCountry);
+}
 
 
 function displaySecondCountry() { }
