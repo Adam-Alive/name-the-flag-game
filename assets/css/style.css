@@ -9,12 +9,24 @@
 }
 
 /* General styles */
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(176, 196, 222);
     text-align: center;
 }
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
 
 h1 {
     color: rgb(10, 13, 17);
@@ -39,7 +51,6 @@ img {
 .game-area {
     width: 85%;
     max-width: 800px;
-    max-height: 700px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(255, 255, 255);
@@ -111,10 +122,8 @@ img {
 
 /* Footer */
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    padding: 0 0 10px 0;
+    margin: .75em auto;
 }
 
 /* Media Queries */
