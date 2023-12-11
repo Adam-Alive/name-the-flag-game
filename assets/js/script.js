@@ -55,18 +55,28 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(buttons);
 });
 
-// Randomly selects a flag-country pair - does so as a function, but not when variable
-/** function displayCurrentFlag() {
-    let currentFlag = (flagData[Math.floor(Math.random() * flagData.length)]);
-    console.log(currentFlag.country);
-}*/
+
 
 for (let country of flagData) {
     console.log(country.country);
 }
 
+for (let flag of flagData) {
+    console.log(flag.flag);
+}
 
-let countryNameDiv = document.getElementById('country');
+// Randomly selects a flag-country pair - does so as a function, but not when variable
+function displayCurrentFlag() {
+    console.log(flagData[Math.floor(Math.random() * flagData.length)]);
+}
+displayCurrentFlag();
+
+
+let testCountryDiv = document.getElementById('current-flag-country').innerHTML;
+console.log(testCountryDiv);
+
+
+// let countryNameDiv = document.getElementById('country');
 
 
 
