@@ -14,13 +14,9 @@ Users can restart the game at any time, both during the game and at the end to s
 ## Target Audience
 The target audience is children and adults who will be able to enjoy testing their knowledge and learn more about world flags. 
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
+**ADD mockup image once complete.**
 <https://ui.dev/amiresponsive?url=https://adam-alive.github.io/name-the-flag-game>
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
 To add the image into your README, use this format:
 (assuming you have a new folder called `documentation` with an image called "mockup.png")
 
@@ -33,6 +29,10 @@ Find out more about using Markdown elements here:
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## UX
+### Initial Design
+Draft visual of how the game will appear on-screen:
+![screenshot](documentation/initial-game-design.pdf)
+
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
