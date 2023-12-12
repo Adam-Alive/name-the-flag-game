@@ -1,12 +1,18 @@
 
-const startButton = document.getElementById('start-btn')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const optionsContainerElement = document.getElementById('flag-options-container');
 
-startButton.addEventListener('click', startGame)
+
+startButton.addEventListener('click', startGame);
 
 
 // Functions
-function startGame() { 
+function startGame() {
     startButton.classList.add('hide');
+    nextButton.classList.remove('hide');
+    optionsContainerElement.classList.remove('hide');
+
 }
 
 
@@ -19,11 +25,11 @@ function totalScoreMessage() { }
 
 
 
-function shuffleQuestions() {}
+function shuffleQuestions() { }
 
-function correctAnswer() {}
+function correctAnswer() { }
 
-function incorrectAnswer() {}
+function incorrectAnswer() { }
 
 
 
