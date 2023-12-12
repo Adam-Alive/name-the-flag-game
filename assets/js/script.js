@@ -1,7 +1,7 @@
 
 const startButton = document.getElementById('start-btn');
-// const welcomeText = document.getElementsByClassName('welcome-text'); **Tim**
-const tallyArea = document.getElementById('tally-area');
+const welcomeTextDiv = document.getElementById('welcome-text');
+const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 
@@ -13,8 +13,8 @@ nextButton.addEventListener('click', test);
 // Functions
 function startGame() {
     startButton.classList.add('hide');
-    // welcomeText.classList.add('hide); ** Check with Tim **
-    tallyArea.classList.remove('hide');
+    welcomeTextDiv.classList.add('hide');
+    tallyAreaDiv.classList.remove('hide');
     nextButton.classList.remove('hide');
     optionsContainerDiv.classList.remove('hide');
 
