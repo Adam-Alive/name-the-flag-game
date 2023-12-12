@@ -59,11 +59,15 @@ img {
     padding: 15px 0 15px 0;
 }
 
+.welcome-text {
+    padding: 0 0 15px 0;
+}
+
 /* Question and score tally */
 .tally-display {
     display: flex;
     justify-content: space-around;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 /* Flag display */
