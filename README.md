@@ -1,14 +1,18 @@
 # [NAME THE FLAG GAME](https://adam-alive.github.io/name-the-flag-game)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+## Project Purpose
+The purpose of this project is to create a simple and intuitive quiz-game where users can test their knowledge of world flags.
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+Users will be able to navigate the game with minimal instructions, enjoying a clean and uncluttered design.
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
+For each question, a flag image will appear on screen and users can choose a country from one of three buttons. The button clicked will turn green if correct and red if incorrect, with the correct button turning green to enable learning by the user.
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+There are 20 questions and a running score is shown along with the total score at the game's completion.
+
+Users can restart the game at any time, both during the game and at the end to start a new one.
+
+## Target Audience
+The target audience is children and adults who will be able to enjoy testing their knowledge and learn more about world flags. 
 
 Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
