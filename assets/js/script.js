@@ -5,7 +5,7 @@ const optionsContainerElement = document.getElementById('flag-options-container'
 
 
 startButton.addEventListener('click', startGame);
-
+nextButton.addEventListener('click', test);
 
 // Functions
 function startGame() {
@@ -15,9 +15,9 @@ function startGame() {
 
 }
 
-
-
-displayCurrentFlag();
+function test() {
+    console.log('next button has been clicked');
+}
 
 function nextQuestion() { }
 
