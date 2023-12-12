@@ -28,53 +28,69 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
-    <h1 class="heading">Name The Flag</h1>
-    <div class="game-area">
-      <div>
+    <!-- Header text -->
+    <header>
+      <h1 class="heading">Name The Flag</h1>
+    </header>
+    <!-- Main content -->
+    <main class="game-area">
+      <!-- Welcome section  -->
+      <section>
         <p>
           Welcome to this fun quiz to test your knowledge of flags around the
           world.
         </p>
         <p>How many will you get out of 20?</p>
-      </div>
-      <div class="tally-area">
-        <p class="tally-display">
-          <span id="question-tally">Question 1 / 20 </span>
-          <span id="score-tally"> Score: 0</span>
-        </p>
-      </div>
-      <div id="current-flag">
-        <img src="assets/images/flags.webp" />
-      </div>
-      <div id="flag-options-container" class="flag-options hide">
-        <button data-type="submit" id="current-flag-country" class="flag-btn">
-          Option 1
-        </button>
-        <button data-type="submit" id="second-country" class="flag-btn">
-          Option 2
-        </button>
-        <button data-type="submit" id="third-country" class="flag-btn">
-          Option 3
-        </button>
-      </div>
-      <div id="game-btn-container">
-        <button data-type="submit" id="Start" class="game-btn">Start</button>
-        <button data-type="submit" id="restart" class="game-btn hide">
-          Restart
-        </button>
-      </div>
-      <div id="score-message" class="hide">
-        <p class="message-text">
-          <span>Well done, your total score is </span>
-          <span id="total-score">0</span>
-        </p>
-        <button data-type="submit" id="restart" class="game-btn">
-          Play Again
-        </button>
-      </div>
-    </div>
+      </section>
+      <!-- Score and flag display section -->
+      <section>
+        <div class="tally-area">
+          <p class="tally-display">
+            <span id="question-tally">Question 1 / 20 </span>
+            <span id="score-tally"> Score: 0</span>
+          </p>
+        </div>
+        <div id="current-flag">
+          <img
+            src="assets/images/flags.webp"
+            alt="Colourful collage of world flags in a circle representing the globe"
+          />
+        </div>
+      </section>
+      <!-- Flag questions section -->
+      <section>
+        <div id="flag-options-container" class="flag-options hide">
+          <button data-type="submit" id="current-flag-country" class="flag-btn">
+            Option 1
+          </button>
+          <button data-type="submit" id="second-country" class="flag-btn">
+            Option 2
+          </button>
+          <button data-type="submit" id="third-country" class="flag-btn">
+            Option 3
+          </button>
+        </div>
+        <div id="game-btn-container">
+          <button data-type="submit" id="Start" class="game-btn">Start</button>
+          <button data-type="submit" id="restart" class="game-btn hide">
+            Restart
+          </button>
+        </div>
+      </section>
+      <!-- Total score and restart section -->
+      <section>
+        <div id="score-message" class="hide">
+          <p class="message-text">
+            <span>Well done, your total score is </span>
+            <span id="total-score">0</span>
+          </p>
+          <button data-type="submit" id="restart" class="game-btn">
+            Play Again
+          </button>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div>© Adam Alive 2023</div>
