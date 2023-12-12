@@ -1,17 +1,20 @@
 
 const startButton = document.getElementById('start-btn');
-const tallyAreaDiv = document.getElementById('tally-area')
-const nextButton = document.getElementById('next-btn'); 
+// const welcomeText = document.getElementsByClassName('welcome-text'); **Tim**
+const tallyArea = document.getElementById('tally-area');
+const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 
 
 startButton.addEventListener('click', startGame);
+// Need to replace test in function below when ready!!!
 nextButton.addEventListener('click', test);
 
 // Functions
 function startGame() {
     startButton.classList.add('hide');
-    tallyAreaDiv.classList.remove('hide');
+    // welcomeText.classList.add('hide); ** Check with Tim **
+    tallyArea.classList.remove('hide');
     nextButton.classList.remove('hide');
     optionsContainerDiv.classList.remove('hide');
 
