@@ -48,55 +48,56 @@ const questionsList = [
             { text: 'Brunei', correct: true },
         ]
     },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
-    {
-        flag: '',
-        options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
-        ]
-    },
+]
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
+//     {
+//         flag: '',
+//         options: [
+//             { text: '', correct: },
+//             { text: '', correct: },
+//             { text: '', correct: },
+//         ]
+//     },
 
 
-    // Last square bracket below
-];
+//     // Last square bracket below
+// ];

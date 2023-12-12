@@ -19,6 +19,8 @@ function test() {
     console.log('next button has been clicked');
 }
 
+console.log(questionsList);
+
 function nextQuestion() { }
 
 function totalScoreMessage() { }
