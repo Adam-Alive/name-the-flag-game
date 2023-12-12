@@ -4,11 +4,14 @@ const welcomeTextDiv = document.getElementById('welcome-text');
 const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
+const restartButton = document.getElementById('restart-btn');
+// Need to test restart function
 
 
 startButton.addEventListener('click', startGame);
 // Need to replace test in function below when ready!!!
 nextButton.addEventListener('click', test);
+restartButton.addEventListener('click', startGame);
 
 // Functions
 function startGame() {
@@ -17,6 +20,9 @@ function startGame() {
     tallyAreaDiv.classList.remove('hide');
     nextButton.classList.remove('hide');
     optionsContainerDiv.classList.remove('hide');
+    restartButton.classList.remove('hide');
+
+
 
 }
 
