@@ -120,6 +120,10 @@ img {
     padding: 10px 0 10px 0;
 }
 
+.hide {
+    display: none;
+}
+
 /* Footer */
 footer {
     width: 100%;
