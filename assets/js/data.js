@@ -1,51 +1,51 @@
 // Questions data
 const questionsList = [
     {
-        flag: '',
+        flag: 'Burkina Faso',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Denmark', correct: false },
+            { text: 'Benin', correct: false },
+            { text: 'Burkina Faso', correct: true },
         ]
     },
     {
-        flag: '',
+        flag: 'Poland',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Mozambique', correct: false },
+            { text: 'Poland', correct: true },
+            { text: 'Saint Lucia', correct: false },
         ]
     },
     {
-        flag: '',
+        flag: 'North Macedonia',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'North Macedonia', correct: true},
+            { text: 'Channel Islands', correct: false },
+            { text: 'Rwanda', correct: false},
         ]
     },
     {
-        flag: '',
+        flag: 'South Korea',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Malta', correct: false },
+            { text: 'South Korea', correct: true },
+            { text: 'Guinea', correct: false},
         ]
     },
     {
-        flag: '',
+        flag: 'Malawi',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Malawi', correct: true },
+            { text: 'Albania', correct: false},
+            { text: 'North Korea', correct: false },
         ]
     },
     {
-        flag: '',
+        flag: 'Brunei',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Israel', correct: false },
+            { text: 'India', correct: false },
+            { text: 'Brunei', correct: true },
         ]
     },
     {
