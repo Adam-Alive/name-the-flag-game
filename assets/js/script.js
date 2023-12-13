@@ -7,24 +7,23 @@ const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
 
 
-
 let shuffledFlagData, currentFlagIndex
 
-
-//let img = document.getElementById('flag-image');
+let img = document.getElementById('flag-image');
 
 startButton.addEventListener('click', startGame);
+
 nextButton.addEventListener('click', () => {
     currentFlagIndex++
     setNextQuestion()    
 });
 
+restartButton.addEventListener('click', startGame);
 
 
-// Need to replace test in function below when ready!!! (nextButton)
 
-// Need to replace test2 in function below when ready!!!
-restartButton.addEventListener('click', test2);
+
+
 
 // Functions
 function startGame() {
@@ -34,7 +33,7 @@ function startGame() {
     nextButton.classList.remove('hide');
     optionsContainerDiv.classList.remove('hide');
     restartButton.classList.remove('hide');
-
+    console.log('game has started!');
 }
 
 function setNextQuestion() { 
@@ -51,9 +50,9 @@ function test() {
     console.log('next button has been clicked');
 }
 
-function test2() {
-    console.log('restart button has been clicked');
-}
+// function test2() {
+//     console.log('restart button has been clicked');
+// }
 
 // *** Temporaary code for testing ***
 console.log(flagData);
