@@ -5,13 +5,13 @@ const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
-// Need to test restart function
 
 
 startButton.addEventListener('click', startGame);
 // Need to replace test in function below when ready!!!
 nextButton.addEventListener('click', test);
-restartButton.addEventListener('click', startGame);
+// Need to replace test2 in function below when ready!!!
+restartButton.addEventListener('click', test2);
 
 // Functions
 function startGame() {
@@ -31,7 +31,12 @@ function test() {
     console.log('next button has been clicked');
 }
 
+function test2() {
+    console.log('restart button has been clicked');
+}
+
 console.log(questionsList);
+
 
 function nextQuestion() { }
 
