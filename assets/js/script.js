@@ -36,9 +36,17 @@ function test2() {
     console.log('restart button has been clicked');
 }
 
-console.log(questionsList);
+// *** Temporaary code for testing ***
+console.log(questionList);
 
-console.log(questionsList[1]);
+console.log(questionList[1]);
+
+console.log(questionList[2].flag);
+
+for (let flag of questionList) {
+    console.log(flag)
+}
+
 
 // Possible functions ***
 function nextQuestion() { }

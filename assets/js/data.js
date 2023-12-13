@@ -1,5 +1,5 @@
 // Questions data
-const questionsList = [
+const questionList = [
     {
         flag: 'Burkina Faso',
         options: [
