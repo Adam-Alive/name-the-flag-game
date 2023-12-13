@@ -5,7 +5,9 @@ const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
-const 
+const flagOneButton = document.getElementById('flag-one');
+const flagTwoButton = document.getElementById('flag-two');
+const flagThreeButton = document.getElementById('flag-three');
 
 
 
@@ -21,7 +23,9 @@ nextButton.addEventListener('click', () => {
 });
 
 restartButton.addEventListener('click', startGame);
-
+flagOneButton.addEventListener('click', testFlagButtons);
+flagTwoButton.addEventListener('click', testFlagButtons);
+flagThreeButton.addEventListener('click', testFlagButtons);
 
 
 // Functions
@@ -62,7 +66,9 @@ function test() {
     console.log('next button has been clicked');
 }
 
-
+function testFlagButtons() {
+    console.log('flag button has been clicked!!!)');
+}
 
 
 
