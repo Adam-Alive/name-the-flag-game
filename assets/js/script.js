@@ -7,6 +7,7 @@ const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
 
 
+
 startButton.addEventListener('click', startGame);
 // Need to replace test in function below when ready!!!
 nextButton.addEventListener('click', test);
@@ -37,19 +38,18 @@ function test2() {
 
 console.log(questionsList);
 
+console.log(questionsList[1]);
 
+// Possible functions ***
 function nextQuestion() { }
 
 function totalScoreMessage() { }
-
-
 
 function shuffleQuestions() { }
 
 function correctAnswer() { }
 
 function incorrectAnswer() { }
-
 
 
 // Code below is for reference
