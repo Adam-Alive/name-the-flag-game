@@ -65,8 +65,9 @@ img {
 
 /* Question and score tally */
 .tally-display {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
+    text-align: center;
     font-weight: 700;    
 }
 
