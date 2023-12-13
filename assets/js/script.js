@@ -21,10 +21,6 @@ nextButton.addEventListener('click', () => {
 restartButton.addEventListener('click', startGame);
 
 
-
-
-
-
 // Functions
 function startGame() {
     startButton.classList.add('hide');
@@ -33,17 +29,27 @@ function startGame() {
     nextButton.classList.remove('hide');
     optionsContainerDiv.classList.remove('hide');
     restartButton.classList.remove('hide');
+// Test code
     console.log('game has started!');
+// Continue
+    shuffledFlagData = flagData.sort(() => Math.random() -0.5);
+    currentFlagIndex = 0;
+    showFlagQuestion();
+
+
 }
+
+// Function to display flag image and 3 answer options
+function showFlagQuestion() {
+    console.log('this is showFlagQuestion!')
+}
+
 
 function setNextQuestion() { 
     console.log('this is setNextQuestion!!!')
-};
-
-// Function to display flag image
-function displayFlagImage() {
-
 }
+
+
 
 // *** Temporary functions for testing ***
 function test() {
