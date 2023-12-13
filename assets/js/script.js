@@ -7,11 +7,22 @@ const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
 
 
+
+let shuffledFlagData, currentFlagIndex
+
+
 //let img = document.getElementById('flag-image');
 
 startButton.addEventListener('click', startGame);
-// Need to replace test in function below when ready!!!
-nextButton.addEventListener('click', test);
+nextButton.addEventListener('click', () => {
+    currentFlagIndex++
+    setNextQuestion()    
+});
+
+
+
+// Need to replace test in function below when ready!!! (nextButton)
+
 // Need to replace test2 in function below when ready!!!
 restartButton.addEventListener('click', test2);
 
@@ -25,6 +36,10 @@ function startGame() {
     restartButton.classList.remove('hide');
 
 }
+
+function setNextQuestion() { 
+    console.log('this is setNextQuestion!!!')
+};
 
 // Function to display flag image
 function displayFlagImage() {
@@ -61,7 +76,7 @@ console.log(flagData[3].options[2].correct);
 
 
 // Possible functions ***
-function nextQuestion() { }
+
 
 function totalScoreMessage() { }
 
