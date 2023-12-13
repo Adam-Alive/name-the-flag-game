@@ -5,6 +5,8 @@ const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
+const 
+
 
 
 let shuffledFlagData, currentFlagIndex;
@@ -19,6 +21,7 @@ nextButton.addEventListener('click', () => {
 });
 
 restartButton.addEventListener('click', startGame);
+
 
 
 // Functions
@@ -41,7 +44,10 @@ function startGame() {
 
 // Function to display flag image and 3 answer options
 function showFlagQuestion() {
+    // Test code
     console.log('this is showFlagQuestion!');
+    // Continue
+
 }
 
 
@@ -55,6 +61,12 @@ function showFlagQuestion() {
 function test() {
     console.log('next button has been clicked');
 }
+
+
+
+
+
+
 
 
 // *** Temporaary code for testing ***
