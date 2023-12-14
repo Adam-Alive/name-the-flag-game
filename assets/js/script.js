@@ -29,7 +29,7 @@ flagThreeButton.addEventListener('click', testFlagButtons);
 
 nextButton.addEventListener('click', () => {
     currentFlagIndex++;
-    // setNextQuestion();
+    setNextQuestion();
 });
 
 // * FUNCTIONS * //
@@ -79,18 +79,16 @@ function selectAnswer() {
 
 }
 
-
-// function setNextQuestion() {
-//     console.log('this is setNextQuestion!!!');
-// }
-
 // Go to next question and increment question number
-function setNextQuestion() { 
-
+function setNextQuestion() {
+    console.log('this is setNextQuestion!!!');
 }
 
+
 // Display total score and message
-function totalScoreMessage() { }
+function totalScoreMessage() { 
+
+}
 
 
 
