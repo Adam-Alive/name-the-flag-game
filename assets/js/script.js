@@ -48,21 +48,35 @@ function startGame() {
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
     currentFlagIndex = 0;
     showFlagQuestion();
+    // Test code
     console.log(shuffledFlagData);
+    // Continue
+    showFlagAnswers();
 
 }
 
-// Display flag image and 3 answer options
+// Display flag image for question
 function showFlagQuestion() {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
     flagImage.innerText = flagData[0].flag;
         // I still don't understand how this will access the image files:
-    img.src = `assets/images/${flagImage.toLowerCase().replace(' ', '-')}.webp`;
+    // img.src = `assets/images/${flagImage.toLowerCase().replace(' ', '-')}.webp`;
     
 
 }
+
+//Display answer options on 3 buttons
+function showFlagAnswers () {
+    flagOneButton.innerText = flagData[0].options[0].text;
+    flagTwoButton.innerText = flagData[0].options[1].text;
+    flagThreeButton.innerText = flagData[0].options[2].text;
+
+
+
+}
+
 
 
 // function setNextQuestion() {
