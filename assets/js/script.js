@@ -22,6 +22,7 @@ let img = document.getElementById('flag-image');
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
+// !!!*** I need to replace testFlagButtons in parameters below: ***!!!
 flagOneButton.addEventListener('click', testFlagButtons);
 flagTwoButton.addEventListener('click', testFlagButtons);
 flagThreeButton.addEventListener('click', testFlagButtons);
@@ -52,12 +53,13 @@ function startGame() {
 }
 
 // Display flag image and 3 answer options
-function showFlagQuestion(flag) {
+function showFlagQuestion() {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
-    // I still don't understand how this will access the image files:
-    // img.src = `assets/images/${flag.toLowerCase().replace(' ', '-')}.webp`;
+    flagImage.innerText = flagData[0].flag;
+        // I still don't understand how this will access the image files:
+    img.src = `assets/images/${flagImage.toLowerCase().replace(' ', '-')}.webp`;
     
 
 }
