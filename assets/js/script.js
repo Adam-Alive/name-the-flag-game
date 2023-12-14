@@ -61,7 +61,7 @@ function showFlagQuestion() {
     console.log('this is showFlagQuestion!');
     // Continue
     flagImage.innerText = flagData[0].flag;
-        // I still don't understand how this will access the image files:
+        // I still don't understand how this will access the image files - this code crashes
     // img.src = `assets/images/${flagImage.toLowerCase().replace(' ', '-')}.webp`;
     
 
@@ -73,27 +73,24 @@ function showFlagAnswers () {
     flagTwoButton.innerText = flagData[0].options[1].text;
     flagThreeButton.innerText = flagData[0].options[2].text;
 
-
-
 }
 
+function selectAnswer() { 
+
+}
 
 
 // function setNextQuestion() {
 //     console.log('this is setNextQuestion!!!');
 // }
 
-
-
-// 
-function selectAnswer() { }
-
 // Go to next question and increment question number
-function setNextQuestion() { }
+function setNextQuestion() { 
+
+}
 
 // Display total score and message
 function totalScoreMessage() { }
-
 
 
 
@@ -122,3 +119,4 @@ console.log(flagData[2].options[1]);
 console.log(flagData[2].options[1].text);
 
 console.log(flagData[3].options[2].correct);
+// END
