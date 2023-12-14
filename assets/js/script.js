@@ -1,4 +1,6 @@
+// * VARIABLES * //
 
+// Constant variables related to the DOM
 const startButton = document.getElementById('start-btn');
 const welcomeTextDiv = document.getElementById('welcome-text');
 const tallyAreaDiv = document.getElementById('tally-area');
@@ -9,26 +11,26 @@ const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
 
-
-
+// Variables for game set-up and play
 let shuffledFlagData, currentFlagIndex;
 
 let img = document.getElementById('flag-image');
 
+// * EVENT LISTENERS * //
+
 startButton.addEventListener('click', startGame);
+restartButton.addEventListener('click', startGame);
+flagOneButton.addEventListener('click', testFlagButtons);
+flagTwoButton.addEventListener('click', testFlagButtons);
+flagThreeButton.addEventListener('click', testFlagButtons);
 
 nextButton.addEventListener('click', () => {
     currentFlagIndex++;
     // setNextQuestion();
 });
 
-restartButton.addEventListener('click', startGame);
-flagOneButton.addEventListener('click', testFlagButtons);
-flagTwoButton.addEventListener('click', testFlagButtons);
-flagThreeButton.addEventListener('click', testFlagButtons);
+// * FUNCTIONS * //
 
-
-// Functions
 function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
@@ -60,6 +62,16 @@ function showFlagQuestion() {
 // }
 
 
+// Possible functions ***
+
+function selectAnswer() { }
+
+function setNextQuestion() { }
+
+function totalScoreMessage() { }
+
+
+
 
 // *** Temporary functions for testing ***
 function test() {
@@ -70,12 +82,7 @@ function testFlagButtons() {
     console.log('flag button has been clicked!!!)');
 }
 
-
-
-
-
-
-// *** Temporaary code for testing ***
+// *** Temporary code for testing ***
 console.log(flagData);
 
 console.log(flagData[1]);
@@ -91,29 +98,3 @@ console.log(flagData[2].options[1]);
 console.log(flagData[2].options[1].text);
 
 console.log(flagData[3].options[2].correct);
-
-
-
-
-// Possible functions ***
-
-function selectAnswer() { }
-
-function setNextQuestion() { }
-
-function totalScoreMessage() { }
-
-
-
-
-// Code below is for reference
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     let buttons = document.getElementsByTagName("button");
-//     console.log(buttons);
-// });
-
-// Randomly selects a flag-country pair - does so as a function, but not when variable
-// function displayCurrentFlag() {
-//     console.log(flagData[Math.floor(Math.random() * flagData.length)]);
-// }
