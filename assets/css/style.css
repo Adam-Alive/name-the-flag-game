@@ -46,8 +46,6 @@ img {
     width: 75%;
 }
 
-
-
 /* Game area */
 .game-area {
     width: 85%;
@@ -126,8 +124,6 @@ img {
     padding: 10px 0 10px 0;
 }
 
-
-
 /* Footer */
 footer {
     width: 100%;
@@ -146,6 +142,7 @@ footer {
     }
 }
 
+/* Hide and Disable Styling */
 .hide {
     display: none;
 }
