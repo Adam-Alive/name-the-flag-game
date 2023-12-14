@@ -9,27 +9,29 @@ const restartButton = document.getElementById('restart-btn');
 const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
+const flagButtons = document.querySelectorAll('.flag-btn');
 const flagImage = document.getElementById('flag-image');
 const answersContainerDiv = document.getElementById('answers-container');
 
 // Variables for game set-up and play
 let shuffledFlagData;
-let currentFlagIndex;
-
-let img = document.getElementById('flag-image');
+let currentFlagIndex = 0;
 
 // * EVENT LISTENERS * //
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
 // !!!*** I need to replace testFlagButtons in parameters below: ***!!!
-flagOneButton.addEventListener('click', testFlagButtons);
-flagTwoButton.addEventListener('click', testFlagButtons);
-flagThreeButton.addEventListener('click', testFlagButtons);
+
+flagButtons.forEach(btn => {
+    btn.addEventListener('click', userSelectedButton);
+});
 
 nextButton.addEventListener('click', () => {
     currentFlagIndex++;
+    enableButtons();
     setNextQuestion();
+
 });
 
 // * FUNCTIONS * //
@@ -46,7 +48,6 @@ function startGame() {
     console.log('game has started!');
     // Continue
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
-    currentFlagIndex = 0;
     showFlagQuestion();
     // Test code
     console.log(shuffledFlagData);
@@ -60,39 +61,39 @@ function showFlagQuestion() {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
-    flagImage.innerText = flagData[0].flag;
-        // I still don't understand how this will access the image files - this code crashes
-    // img.src = `assets/images/${flagImage.toLowerCase().replace(' ', '-')}.webp`;
-    
+    // I still don't understand how this will access the image files - this code crashes
+    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;
+
 
 }
 
 //Display answer options on 3 buttons
-function showFlagAnswers () {
-    flagOneButton.innerText = flagData[0].options[0].text;
-    flagTwoButton.innerText = flagData[0].options[1].text;
-    flagThreeButton.innerText = flagData[0].options[2].text;
+function showFlagAnswers() {
+    flagOneButton.innerText = flagData[currentFlagIndex].options[0].text;
+    flagTwoButton.innerText = flagData[currentFlagIndex].options[1].text;
+    flagThreeButton.innerText = flagData[currentFlagIndex].options[2].text;
 
-    // target true / false values ??
-    flagOneButton. (innerText ??) = flagData[0].options[0].correct;
-    flagTwoButton. (innerText ??) = flagData[0].options[1].correct;
-    flagThreeButton. (innerText ??) = flagData[0].options[2].correct
+    flagOneButton.dataset.correct = flagData[currentFlagIndex].options[0].correct;
+    flagTwoButton.dataset.correct = flagData[currentFlagIndex].options[1].correct;
+    flagThreeButton.dataset.correct = flagData[currentFlagIndex].options[2].correct;
 
 
 }
 
-function selectAnswer() { 
+function selectAnswer() {
 
 }
 
 // Go to next question and increment question number
 function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
+    showFlagQuestion();
+    showFlagAnswers();
 }
 
 
 // Display total score and message
-function totalScoreMessage() { 
+function totalScoreMessage() {
 
 }
 
@@ -103,8 +104,21 @@ function test() {
     console.log('next button has been clicked');
 }
 
-function testFlagButtons() {
+function userSelectedButton() {
     console.log('flag button has been clicked!!!)');
+    disableButtons();
+}
+
+function disableButtons() {
+    flagButtons.forEach(btn => {
+        btn.classList.add('disable');
+    });
+}
+
+function enableButtons() {
+    flagButtons.forEach(btn => {
+        btn.classList.remove('disable');
+    });
 }
 
 // *** Temporary code for testing ***
