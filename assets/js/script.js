@@ -9,7 +9,7 @@ const restartButton = document.getElementById('restart-btn');
 const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
-const flagImageDiv = document.getElementById('flag-image');
+const flagImage = document.getElementById('flag-image');
 const optionsContainerDiv = document.getElementById('flag-options-container');
 
 // Variables for game set-up and play
