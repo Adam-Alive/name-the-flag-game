@@ -12,7 +12,8 @@ const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
 
 // Variables for game set-up and play
-let shuffledFlagData, currentFlagIndex;
+let shuffledFlagData;
+let currentFlagIndex;
 
 let img = document.getElementById('flag-image');
 
@@ -31,6 +32,7 @@ nextButton.addEventListener('click', () => {
 
 // * FUNCTIONS * //
 
+// Start and restart game
 function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
@@ -48,11 +50,13 @@ function startGame() {
 
 }
 
-// Function to display flag image and 3 answer options
-function showFlagQuestion() {
+// Display flag image and 3 answer options
+function showFlagQuestion(flag) {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
+    img.src = `assets/images/${flag.toLowerCase().replace(' ', '-')}.webp`;
+    
 
 }
 
@@ -62,12 +66,14 @@ function showFlagQuestion() {
 // }
 
 
-// Possible functions ***
 
+// 
 function selectAnswer() { }
 
+// Go to next question and increment question number
 function setNextQuestion() { }
 
+// Display total score and message
 function totalScoreMessage() { }
 
 
