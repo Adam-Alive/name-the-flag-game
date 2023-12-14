@@ -73,6 +73,12 @@ function showFlagAnswers () {
     flagTwoButton.innerText = flagData[0].options[1].text;
     flagThreeButton.innerText = flagData[0].options[2].text;
 
+    // target true / false values ??
+    flagOneButton. (innerText ??) = flagData[0].options[0].correct;
+    flagTwoButton. (innerText ??) = flagData[0].options[1].correct;
+    flagThreeButton. (innerText ??) = flagData[0].options[2].correct
+
+
 }
 
 function selectAnswer() { 
