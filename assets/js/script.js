@@ -5,11 +5,12 @@ const startButton = document.getElementById('start-btn');
 const welcomeTextDiv = document.getElementById('welcome-text');
 const tallyAreaDiv = document.getElementById('tally-area');
 const nextButton = document.getElementById('next-btn');
-const optionsContainerDiv = document.getElementById('flag-options-container');
 const restartButton = document.getElementById('restart-btn');
 const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
+const flagImageDiv = document.getElementById('flag-image');
+const optionsContainerDiv = document.getElementById('flag-options-container');
 
 // Variables for game set-up and play
 let shuffledFlagData;
@@ -55,7 +56,8 @@ function showFlagQuestion(flag) {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
-    img.src = `assets/images/${flag.toLowerCase().replace(' ', '-')}.webp`;
+    // I still don't understand how this will access the image files:
+    // img.src = `assets/images/${flag.toLowerCase().replace(' ', '-')}.webp`;
     
 
 }
