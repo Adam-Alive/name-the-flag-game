@@ -10,7 +10,7 @@ const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
 const flagImage = document.getElementById('flag-image');
-const optionsContainerDiv = document.getElementById('flag-options-container');
+const answersContainerDiv = document.getElementById('answers-container');
 
 // Variables for game set-up and play
 let shuffledFlagData;
@@ -39,7 +39,7 @@ function startGame() {
     welcomeTextDiv.classList.add('hide');
     tallyAreaDiv.classList.remove('hide');
     nextButton.classList.remove('hide');
-    optionsContainerDiv.classList.remove('hide');
+    answersContainerDiv.classList.remove('hide');
     restartButton.classList.remove('hide');
     // Test code
     console.log('game has started!');

@@ -79,7 +79,7 @@ img {
 }
 
 /* Buttons to select answer for displayed flag */
-.flag-options {
+.answers-options {
     display: grid;
     gap: 20px;
     justify-content: center;
