@@ -80,8 +80,13 @@ function showFlagAnswers() {
 function selectAnswer() {
     console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
-        console.log(btn.innerText);
-        btn.classList.add('flag-btn-true');
+    let answer = btn.dataset.correct;
+    console.log(answer);
+    if (answer === 'true') {
+    btn.classList.add('flag-btn-true');
+    }
+        
+        
 });
 }
 
