@@ -75,7 +75,7 @@ function showFlagAnswers() {
 // Assign background colours to buttons according to correct/incorrect value
 // Click correct === green
 // Click incorrect === red and correct to === green
-// Increment score by 1 if correct
+
 
 function selectAnswer() {
     console.log('select answer function is linked to userSelectedButton()');
@@ -91,7 +91,7 @@ function selectAnswer() {
 
     });
 }
-
+// Increment score by 1 if answer correct
 function incrementScore() {
     console.log('correct answer - score +1');
 
@@ -99,6 +99,7 @@ function incrementScore() {
     document.getElementById('score-tally').innerText = ++previousScore;
 }
 
+// **** Need to create reset function after click on answer to clear green and red ****
 
 
 
