@@ -74,9 +74,18 @@ function showFlagAnswers() {
 
 // Assign background colours to buttons according to correct/incorrect value
 // Increment score by 1 if correct
-function selectAnswer() { 
-    console.log('select answer function is linked to userSelcetedButton()')
-}
+
+   function selectAnswer(e) {
+        console.log('select answer function is linked to userSelectedButton()');
+        // const selectedButton = e.target;
+        correct = .dataset.correct;
+        if (correct) {
+            flagButtons.classList.add('flag-btn-true');
+        };
+    }
+
+
+
    
 
 // Go to next question and increment question number
