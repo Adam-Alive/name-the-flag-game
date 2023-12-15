@@ -94,6 +94,9 @@ function selectAnswer() {
 
 function incrementScore() {
     console.log('correct answer - score +1');
+
+    let previousScore = parseInt(document.getElementById('score-tally').innerText);
+    document.getElementById('score-tally').innerText = ++previousScore;
 }
 
 
