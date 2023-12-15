@@ -74,10 +74,10 @@ function showFlagAnswers() {
 
 // Assign background colours to buttons according to correct/incorrect value
 // Increment score by 1 if correct
-function selectAnswer() {
-    
-
+function selectAnswer() { 
+    console.log('select answer function is linked to userSelcetedButton()')
 }
+   
 
 // Go to next question and increment question number
 function setNextQuestion() {
@@ -94,6 +94,7 @@ function totalScoreMessage() {
 
 function userSelectedButton() {
     console.log('flag button has been clicked!!!)');
+    selectAnswer();
     disableButtons();
 }
 
