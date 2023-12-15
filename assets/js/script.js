@@ -84,6 +84,8 @@ function selectAnswer() {
     console.log(answer);
     if (answer === 'true') {
     btn.classList.add('flag-btn-true');
+    } else {
+        btn.classList.add('flag-btn-false');
     }
         
         
