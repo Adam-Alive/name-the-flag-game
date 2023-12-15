@@ -80,18 +80,21 @@ function showFlagAnswers() {
 function selectAnswer() {
     console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
-    let answer = btn.dataset.correct;
-    console.log(answer);
-    if (answer === 'true') {
-    btn.classList.add('flag-btn-true');
-    } else {
-        btn.classList.add('flag-btn-false');
-    }
-        
-        
-});
+        let answer = btn.dataset.correct;
+        console.log(answer);
+        if (answer === 'true') {
+            btn.classList.add('flag-btn-true');
+            incrementScore();
+        } else {
+            btn.classList.add('flag-btn-false');
+        }
+
+    });
 }
 
+function incrementScore() {
+    console.log('correct answer - score +1');
+}
 
 
 
