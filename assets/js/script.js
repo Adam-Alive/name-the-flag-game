@@ -76,7 +76,6 @@ function showFlagAnswers() {
 // Click correct === green
 // Click incorrect === red and correct to === green
 
-
 function selectAnswer() {
     console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
@@ -99,17 +98,21 @@ function incrementScore() {
     document.getElementById('score-tally').innerText = ++previousScore;
 }
 
-// **** Need to create reset function after click on answer to clear green and red ****
-
-
-
-
 // Go to next question and increment question number
 function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
     showFlagQuestion();
     showFlagAnswers();
+    resetAnswerButtons();
+    
 
+}
+// Clears green and red colour from answer buttons for next question
+function resetAnswerButtons() {
+    flagButtons.forEach(btn => {     
+    btn.classList.remove('flag-btn-true');
+    btn.classList.remove('flag-btn-false');
+});
 }
 
 // Display total score and message
