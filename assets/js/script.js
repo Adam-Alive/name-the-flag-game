@@ -21,7 +21,6 @@ let currentFlagIndex = 0;
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
-// !!!*** I need to replace testFlagButtons in parameters below: ***!!!
 
 flagButtons.forEach(btn => {
     btn.addEventListener('click', userSelectedButton);
@@ -31,7 +30,6 @@ nextButton.addEventListener('click', () => {
     currentFlagIndex++;
     enableButtons();
     setNextQuestion();
-
 });
 
 // * FUNCTIONS * //
@@ -61,26 +59,23 @@ function showFlagQuestion() {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
-    // I still don't understand how this will access the image files - this code crashes
     flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;
-
-
 }
 
-//Display answer options on 3 buttons
+//Display answer options on 3 buttons and assign answer value to each
 function showFlagAnswers() {
     flagOneButton.innerText = flagData[currentFlagIndex].options[0].text;
     flagTwoButton.innerText = flagData[currentFlagIndex].options[1].text;
     flagThreeButton.innerText = flagData[currentFlagIndex].options[2].text;
-
     flagOneButton.dataset.correct = flagData[currentFlagIndex].options[0].correct;
     flagTwoButton.dataset.correct = flagData[currentFlagIndex].options[1].correct;
     flagThreeButton.dataset.correct = flagData[currentFlagIndex].options[2].correct;
-
-
 }
 
+// Assign background colours to buttons according to correct/incorrect value
+// Increment score by 1 if correct
 function selectAnswer() {
+
 
 }
 
@@ -89,6 +84,7 @@ function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
     showFlagQuestion();
     showFlagAnswers();
+
 }
 
 
