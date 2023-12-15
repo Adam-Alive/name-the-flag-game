@@ -21,6 +21,7 @@ let currentFlagIndex = 0;
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
+// *** Need to add resetAnswersButton() to restartButton event listener ***
 
 flagButtons.forEach(btn => {
     btn.addEventListener('click', userSelectedButton);
@@ -103,11 +104,11 @@ function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
     showFlagQuestion();
     showFlagAnswers();
-    resetAnswerButtons();
-    
+    resetAnswerButtons();    
 
 }
 // Clears green and red colour from answer buttons for next question
+// *** Need this to be called by restartButton
 function resetAnswerButtons() {
     flagButtons.forEach(btn => {     
     btn.classList.remove('flag-btn-true');
