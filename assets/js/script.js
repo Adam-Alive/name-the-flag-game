@@ -75,7 +75,7 @@ function showFlagAnswers() {
 // Assign background colours to buttons according to correct/incorrect value
 // Increment score by 1 if correct
 function selectAnswer() {
-
+    
 
 }
 
@@ -87,17 +87,9 @@ function setNextQuestion() {
 
 }
 
-
 // Display total score and message
 function totalScoreMessage() {
 
-}
-
-
-
-// *** Temporary functions for testing ***
-function test() {
-    console.log('next button has been clicked');
 }
 
 function userSelectedButton() {
@@ -116,6 +108,14 @@ function enableButtons() {
         btn.classList.remove('disable');
     });
 }
+
+
+// *** Temporary functions for testing ***
+function test() {
+    console.log('next button has been clicked');
+}
+
+
 
 // *** Temporary code for testing ***
 console.log(flagData);
