@@ -97,6 +97,14 @@ img {
     background-color: rgb(34, 135, 202);
 }
 
+.flag-btn-true {
+    background-color: rgb(0, 128, 0);
+}
+
+.flag-btn-false {
+    background-color: rgb(255, 0, 0);
+}
+
 /* Buttons to navigate game */
 #game-btn-container {
     display: grid;
