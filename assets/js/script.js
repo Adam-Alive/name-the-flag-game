@@ -73,20 +73,18 @@ function showFlagAnswers() {
 }
 
 // Assign background colours to buttons according to correct/incorrect value
+// Click correct === green
+// Click incorrect === red and correct to === green
 // Increment score by 1 if correct
 
-   function selectAnswer(e) {
-        console.log('select answer function is linked to userSelectedButton()');
-        // const selectedButton = e.target;
-        correct = .dataset.correct;
-        if (correct) {
-            flagButtons.classList.add('flag-btn-true');
-        };
-    }
+function selectAnswer() {
+    console.log('select answer function is linked to userSelectedButton()');
+}
 
 
 
-   
+
+
 
 // Go to next question and increment question number
 function setNextQuestion() {
