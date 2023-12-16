@@ -131,10 +131,8 @@ function resetAnswerButtons() {
 }
 
 // Display total score and message
-// Displau Play Again button
-function endGame() {
-    // startButton.classList.add('hide');
-    // welcomeTextDiv.classList.add('hide');
+// Display Play Again button
+function endGame() {   
     tallyAreaDiv.classList.add('hide');
     nextButton.classList.add('hide');
     answersContainerDiv.classList.add('hide');
@@ -142,6 +140,7 @@ function endGame() {
     scoreMessageDiv.classList.remove('hide');
     console.log('ENDGAME IS CALLED!!!')
     totalScore.innerText = document.getElementById('score-tally').innerText;
+    flagImage.src = `assets/images/flags.webp`;
 }
 
 function userSelectedButton() {
