@@ -13,6 +13,7 @@ const flagButtons = document.querySelectorAll('.flag-btn');
 const flagImage = document.getElementById('flag-image');
 const answersContainerDiv = document.getElementById('answers-container');
 const scoreMessageDiv = document.getElementById('score-message');
+const totalScore = document.getElementById('total-score');
 
 // Variables for game set-up and play
 let shuffledFlagData;
@@ -129,10 +130,8 @@ function resetAnswerButtons() {
     });
 }
 
-// Need: if currentFlagIndex is less than 19 (20??) then endGame() and:
 // Display total score and message
-// Unhide total score message with [scoreTally]
-// Unhide PLAY AGAIN button
+// Displau Play Again button
 function endGame() {
     // startButton.classList.add('hide');
     // welcomeTextDiv.classList.add('hide');
@@ -142,6 +141,7 @@ function endGame() {
     // restartButton.classList.remove('hide');
     scoreMessageDiv.classList.remove('hide');
     console.log('ENDGAME IS CALLED!!!')
+    totalScore.innerText = document.getElementById('score-tally').innerText;
 }
 
 function userSelectedButton() {
