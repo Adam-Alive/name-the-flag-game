@@ -89,12 +89,12 @@ function selectAnswer() {
         } else {
             btn.classList.add('flag-btn-false');
         }
-
     }); 
     console.log(currentFlagIndex);
     if (currentFlagIndex >= 5) {
         console.log('end game')
-    }
+        endGame()
+    };
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
@@ -140,8 +140,8 @@ function endGame() {
     // nextButton.classList.remove('hide');
     // answersContainerDiv.classList.remove('hide');
     // restartButton.classList.remove('hide');
-    // scoreMessageDiv.classList.remove('hide');
-    console.log('ENGAME IS CALLED!!!')
+    scoreMessageDiv.classList.remove('hide');
+    console.log('ENDGAME IS CALLED!!!')
 }
 
 function userSelectedButton() {
