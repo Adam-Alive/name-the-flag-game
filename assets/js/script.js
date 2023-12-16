@@ -75,9 +75,9 @@ function showFlagAnswers() {
     flagThreeButton.dataset.correct = flagData[currentFlagIndex].options[2].correct;
 }
 
-// Assign background colours to buttons according to correct/incorrect value
-// Click correct === green
-// Click incorrect === red and correct to === green
+// Assign background colour (bgc) to buttons according to correct/incorrect value
+// Click correct button === green bgc
+// Click incorrect button === red bgc colour and show correct button === green bgc
 
 function selectAnswer() {
     console.log('select answer function is linked to userSelectedButton()');
@@ -121,7 +121,7 @@ function incrementQuestionTally() {
     document.getElementById('question-tally').innerText = ++previousTally;
 }
 
-// Clears green and red colour from answer buttons for next question
+// Clears green and red background colour from answer buttons for next question
 // *** Need this to be called by restartButton
 function resetAnswerButtons() {
     flagButtons.forEach(btn => {
@@ -170,19 +170,19 @@ function test() {
 
 
 // *** Temporary code for testing ***
-console.log(flagData);
+// console.log(flagData);
 
-console.log(flagData[1]);
+// console.log(flagData[1]);
 
-console.log(flagData[2].flag);
+// console.log(flagData[2].flag);
 
-for (let flag of flagData) {
-    console.log(flag);
-}
+// for (let flag of flagData) {
+//     console.log(flag);
+// }
 
-console.log(flagData[2].options[1]);
+// console.log(flagData[2].options[1]);
 
-console.log(flagData[2].options[1].text);
+// console.log(flagData[2].options[1].text);
 
-console.log(flagData[3].options[2].correct);
+// console.log(flagData[3].options[2].correct);
 // END
