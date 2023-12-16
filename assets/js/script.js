@@ -88,9 +88,13 @@ function selectAnswer() {
             incrementScore();
         } else {
             btn.classList.add('flag-btn-false');
-            }
+        }
 
-    });
+    }); 
+    console.log(currentFlagIndex);
+    if (currentFlagIndex >= 5) {
+        console.log('end game')
+    }
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
@@ -106,7 +110,8 @@ function setNextQuestion() {
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
-    incrementQuestionTally();      
+    incrementQuestionTally();
+    // console.log(currentFlagIndex);
 
 }
 
@@ -118,10 +123,10 @@ function incrementQuestionTally() {
 // Clears green and red colour from answer buttons for next question
 // *** Need this to be called by restartButton
 function resetAnswerButtons() {
-    flagButtons.forEach(btn => {     
-    btn.classList.remove('flag-btn-true');
-    btn.classList.remove('flag-btn-false');
-});
+    flagButtons.forEach(btn => {
+        btn.classList.remove('flag-btn-true');
+        btn.classList.remove('flag-btn-false');
+    });
 }
 
 // Need: if currentFlagIndex is less than 19 (20??) then endGame() and:
@@ -135,7 +140,8 @@ function endGame() {
     // nextButton.classList.remove('hide');
     // answersContainerDiv.classList.remove('hide');
     // restartButton.classList.remove('hide');
-    scoreMessageDiv.classList.remove('hide');
+    // scoreMessageDiv.classList.remove('hide');
+    console.log('ENGAME IS CALLED!!!')
 }
 
 function userSelectedButton() {
