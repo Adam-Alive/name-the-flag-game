@@ -135,10 +135,10 @@ function resetAnswerButtons() {
 function endGame() {
     // startButton.classList.add('hide');
     // welcomeTextDiv.classList.add('hide');
-    // tallyAreaDiv.classList.remove('hide');
-    // nextButton.classList.remove('hide');
-    // answersContainerDiv.classList.remove('hide');
-    // restartButton.classList.remove('hide');
+    tallyAreaDiv.classList.add('hide');
+    nextButton.classList.add('hide');
+    answersContainerDiv.classList.add('hide');
+    restartButton.classList.add('hide');
     scoreMessageDiv.classList.remove('hide');
     console.log('ENDGAME IS CALLED!!!')
     totalScore.innerText = document.getElementById('score-tally').innerText;
