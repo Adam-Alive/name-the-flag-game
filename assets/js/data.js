@@ -49,55 +49,344 @@ const flagData = [
         ]
     },
 ]
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
-//     {
-//         flag: '',
-//         options: [
-//             { text: '', correct: },
-//             { text: '', correct: },
-//             { text: '', correct: },
-//         ]
-//     },
+// 6 for testing above this line
 
 
+    {
+        flag: 'Guyana',
+        options: [
+            { text: 'Guyana', correct: true},
+            { text: 'Angola', correct: false},
+            { text: 'Barbados', correct: false },
+        ]
+    },
+    {
+    flag: 'Bahrain',
+        options: [
+            { text: 'Bahrain', correct: true},
+            { text: 'Antigua and Barbuda', correct: false},
+            { text: 'Azerbaijan', correct: fasle},
+        ]
+    },
+    {
+    flag: 'Cyprus',
+        options: [
+            { text: 'Cyprus', correct: true},
+            { text: 'Senegal', correct: false},
+            { text: 'Bolivia', correct: false},
+        ]
+    },
+    {
+    flag: 'Netherlands',
+        options: [
+            { text: 'Netherlands', correct: true},
+            { text: 'Taiwan', correct: false},
+            { text: 'Russia', correct: false},
+        ]
+    },
+    {
+    flag: 'Chad',
+        options: [
+            { text: 'Syria', correct: false},
+            { text: 'Chad', correct: true},
+            { text: 'Uganda', correct: false},
+        ]
+    },
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
+{
+    flag: '',
+        options: [
+            { text: '', correct: },
+            { text: '', correct: },
+            { text: '', correct: },
+        ]
+},
 //     // Last square bracket below
 // ];
