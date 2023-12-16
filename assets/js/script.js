@@ -21,11 +21,10 @@ let shuffledFlagData;
 let currentFlagIndex = 0;
 
 // * EVENT LISTENERS * //
-
+//
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
 playAgainButton.addEventListener('click', startGame);
-// *** Need to add resetAnswersButton() to restartButton event listener ***
 
 flagButtons.forEach(btn => {
     btn.addEventListener('click', userSelectedButton);
@@ -38,6 +37,25 @@ nextButton.addEventListener('click', () => {
 });
 
 // * FUNCTIONS * //
+
+// Select button functions
+function userSelectedButton() {
+    console.log('flag button has been clicked!!!)');
+    selectAnswer();
+    disableButtons();
+}
+
+function disableButtons() {
+    flagButtons.forEach(btn => {
+        btn.classList.add('disable');
+    });
+}
+
+function enableButtons() {
+    flagButtons.forEach(btn => {
+        btn.classList.remove('disable');
+    });
+}
 
 // Start and restart game
 function startGame() {
@@ -139,35 +157,12 @@ function resetAnswerButtons() {
 // Display total score and message
 // Display Play Again button
 function endGame() {
-    tallyAreaDiv.classList.add('hide');
     nextButton.classList.add('hide');
-    answersContainerDiv.classList.add('hide');
     restartButton.classList.add('hide');
     scoreMessageDiv.classList.remove('hide');
     console.log('ENDGAME IS CALLED!!!');
-    totalScore.innerText = document.getElementById('score-tally').innerText;
-    flagImage.src = `assets/images/flags.webp`;
+    totalScore.innerText = document.getElementById('score-tally').innerText;    
 }
-
-// Select button functions
-function userSelectedButton() {
-    console.log('flag button has been clicked!!!)');
-    selectAnswer();
-    disableButtons();
-}
-
-function disableButtons() {
-    flagButtons.forEach(btn => {
-        btn.classList.add('disable');
-    });
-}
-
-function enableButtons() {
-    flagButtons.forEach(btn => {
-        btn.classList.remove('disable');
-    });
-}
-
 
 // *** Temporary functions for testing ***
 function test() {
