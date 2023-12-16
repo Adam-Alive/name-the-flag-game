@@ -2,15 +2,16 @@
 
 // Constant variables related to the DOM
 const startButton = document.getElementById('start-btn');
-const welcomeTextDiv = document.getElementById('welcome-text');
-const tallyAreaDiv = document.getElementById('tally-area');
-const nextButton = document.getElementById('next-btn');
-const restartButton = document.getElementById('restart-btn');
+const flagButtons = document.querySelectorAll('.flag-btn');
 const flagOneButton = document.getElementById('flag-one');
 const flagTwoButton = document.getElementById('flag-two');
 const flagThreeButton = document.getElementById('flag-three');
-const flagButtons = document.querySelectorAll('.flag-btn');
+const nextButton = document.getElementById('next-btn');
+const restartButton = document.getElementById('restart-btn');
+const playAgainButton = document.getElementById('play-again-btn');
+const welcomeTextDiv = document.getElementById('welcome-text');
 const flagImage = document.getElementById('flag-image');
+const tallyAreaDiv = document.getElementById('tally-area');
 const answersContainerDiv = document.getElementById('answers-container');
 const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
@@ -23,6 +24,7 @@ let currentFlagIndex = 0;
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
+playAgainButton.addEventListener('click', startGame);
 // *** Need to add resetAnswersButton() to restartButton event listener ***
 
 flagButtons.forEach(btn => {
@@ -45,6 +47,7 @@ function startGame() {
     nextButton.classList.remove('hide');
     answersContainerDiv.classList.remove('hide');
     restartButton.classList.remove('hide');
+    scoreMessageDiv.classList.add('hide');
     // Test code
     console.log('game has started!');
     // Continue
@@ -54,6 +57,7 @@ function startGame() {
     console.log(shuffledFlagData);
     // Continue
     showFlagAnswers();
+    resetAnswerButtons();
 
 }
 
@@ -80,7 +84,8 @@ function showFlagAnswers() {
 // Click incorrect button === red bgc colour and show correct button === green bgc
 
 function selectAnswer() {
-    console.log('select answer function is linked to userSelectedButton()');
+
+    // console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
         let answer = btn.dataset.correct;
         console.log(answer);
@@ -90,16 +95,17 @@ function selectAnswer() {
         } else {
             btn.classList.add('flag-btn-false');
         }
-    }); 
+    });
     console.log(currentFlagIndex);
     if (currentFlagIndex >= 5) {
-        console.log('end game')
-        endGame()
+        console.log('end game');
+        endGame();
     };
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
-    console.log('correct answer - score +1');
+
+    // console.log('correct answer - score +1');
 
     let previousScore = parseInt(document.getElementById('score-tally').innerText);
     document.getElementById('score-tally').innerText = ++previousScore;
@@ -132,17 +138,18 @@ function resetAnswerButtons() {
 
 // Display total score and message
 // Display Play Again button
-function endGame() {   
+function endGame() {
     tallyAreaDiv.classList.add('hide');
     nextButton.classList.add('hide');
     answersContainerDiv.classList.add('hide');
     restartButton.classList.add('hide');
     scoreMessageDiv.classList.remove('hide');
-    console.log('ENDGAME IS CALLED!!!')
+    console.log('ENDGAME IS CALLED!!!');
     totalScore.innerText = document.getElementById('score-tally').innerText;
     flagImage.src = `assets/images/flags.webp`;
 }
 
+// Select button functions
 function userSelectedButton() {
     console.log('flag button has been clicked!!!)');
     selectAnswer();
