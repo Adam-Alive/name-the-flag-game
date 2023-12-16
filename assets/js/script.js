@@ -87,7 +87,7 @@ function selectAnswer() {
             incrementScore();
         } else {
             btn.classList.add('flag-btn-false');
-        }
+            }
 
     });
 }
@@ -115,6 +115,7 @@ function resetAnswerButtons() {
     btn.classList.remove('flag-btn-false');
 });
 }
+
 
 // Display total score and message
 function totalScoreMessage() {
