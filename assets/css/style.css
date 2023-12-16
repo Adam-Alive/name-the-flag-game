@@ -62,7 +62,7 @@ img {
 }
 
 /* Question and score tally */
-.tally-display {
+.tally-display > p {
     /* display: flex;
     justify-content: space-around; */
     text-align: center;
@@ -72,7 +72,7 @@ img {
 /* Flag display */
 #flag-image {
     text-align: center;
-    /* border: 1px solid black; NEED TO ADJUST TO IMAGE SIZE */
+    border: 1px solid black;
     padding: 0 0 10px 0;
 }
 
