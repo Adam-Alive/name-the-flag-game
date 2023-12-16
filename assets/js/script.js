@@ -12,6 +12,7 @@ const flagThreeButton = document.getElementById('flag-three');
 const flagButtons = document.querySelectorAll('.flag-btn');
 const flagImage = document.getElementById('flag-image');
 const answersContainerDiv = document.getElementById('answers-container');
+const scoreMessageDiv = document.getElementById('score-message');
 
 // Variables for game set-up and play
 let shuffledFlagData;
@@ -127,8 +128,14 @@ function resetAnswerButtons() {
 // Display total score and message
 // Unhide total score message with [scoreTally]
 // Unhide PLAY AGAIN button
-function totalScoreMessage() {
-
+function endGame() {
+    // startButton.classList.add('hide');
+    // welcomeTextDiv.classList.add('hide');
+    // tallyAreaDiv.classList.remove('hide');
+    // nextButton.classList.remove('hide');
+    // answersContainerDiv.classList.remove('hide');
+    // restartButton.classList.remove('hide');
+    scoreMessageDiv.classList.remove('hide');
 }
 
 function userSelectedButton() {
