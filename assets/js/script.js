@@ -105,9 +105,15 @@ function setNextQuestion() {
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
-        
+    incrementQuestionTally();      
 
 }
+
+function incrementQuestionTally() {
+    let previousTally = parseInt(document.getElementById('question-tally').innerText);
+    document.getElementById('question-tally').innerText = ++previousTally;
+}
+
 // Clears green and red colour from answer buttons for next question
 // *** Need this to be called by restartButton
 function resetAnswerButtons() {
