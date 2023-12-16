@@ -104,7 +104,8 @@ function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
     showFlagQuestion();
     showFlagAnswers();
-    resetAnswerButtons();    
+    resetAnswerButtons();
+        
 
 }
 // Clears green and red colour from answer buttons for next question
@@ -116,8 +117,10 @@ function resetAnswerButtons() {
 });
 }
 
-
+// Need: if currentFlagIndex is less than 19 (20??) then endGame() and:
 // Display total score and message
+// Unhide total score message with [scoreTally]
+// Unhide PLAY AGAIN button
 function totalScoreMessage() {
 
 }
