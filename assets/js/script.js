@@ -76,7 +76,7 @@ function startGame() {
     // Continue
     showFlagAnswers();
     resetAnswerButtons();
-
+    
 }
 
 // Display flag image for question
@@ -122,9 +122,7 @@ function selectAnswer() {
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
-
     // console.log('correct answer - score +1');
-
     let previousScore = parseInt(document.getElementById('score-tally').innerText);
     document.getElementById('score-tally').innerText = ++previousScore;
 }
@@ -154,6 +152,9 @@ function resetAnswerButtons() {
     });
 }
 
+// Need function to reset questionTally to 1/20 and scoreTally to 0
+
+
 // Display total score and message
 // Display Play Again button
 function endGame() {
@@ -168,7 +169,7 @@ function endGame() {
 function test() {
     console.log('next button has been clicked');
 }
-
+//END
 
 
 // *** Temporary code for testing ***
