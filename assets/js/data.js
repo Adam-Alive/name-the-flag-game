@@ -93,75 +93,75 @@ const flagData = [
         ]
     },
 {
-    flag: '',
+    flag: 'Macao',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Nepal', correct: false},
+            { text: 'Macao', correct: true},
+            { text: 'Afghanistan', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Ireland',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Ireland', correct: true},
+            { text: 'Guyana', correct: false},
+            { text: 'Bhutan', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Cabo Verde',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Canada', correct: false},
+            { text: 'Cabo Verde', correct: true},
+            { text: 'San Marino', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Ghana',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Ghana', correct: true},
+            { text: 'Sierra Leone', correct: false},
+            { text: 'South Korea', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Kyrgyzstan',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'South Korea', correct: false},
+            { text: 'Namibia', correct: false},
+            { text: 'Kyrgyzstan', correct: true},
         ]
 },
 {
-    flag: '',
+    flag: 'Latvia',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Poland', correct: false},
+            { text: 'Latvia', correct: true},
+            { text: 'Costa Rica', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Turkey',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Turkey', correct: true},
+            { text: 'Réunion', correct: false},
+            { text: 'Liechtenstein', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Vatican City',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Vatican City', correct: true},
+            { text: 'Comoros', correct: false},
+            { text: 'Czech Republic', correct: false},
         ]
 },
 {
-    flag: '',
+    flag: 'Haiti',
         options: [
-            { text: '', correct: },
-            { text: '', correct: },
-            { text: '', correct: },
+            { text: 'Saudi Arabia', correct: false},
+            { text: 'Haiti', correct: true},
+            { text: 'China', correct: false},
         ]
 },
 {
