@@ -80,7 +80,7 @@ function startGame() {
     resetAnswerButtons();    
 }
 
-// *** Need to work out how to reset the dataset and shuffle again?? *** 
+// *** Reset the dataset and shuffle again?? *** 
 function resetGame() {
     restartButton.classList.add('hide');
     nextButton.classList.add('hide');
@@ -156,7 +156,6 @@ function incrementQuestionTally() {
 }
 
 // Clears green and red background colour from answer buttons for next question
-// *** Need this to be called by restartButton
 function resetAnswerButtons() {
     flagButtons.forEach(btn => {
         btn.classList.remove('flag-btn-true');
