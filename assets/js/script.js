@@ -61,8 +61,7 @@ function enableButtons() {
 function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
-    tallyAreaDiv.classList.remove('hide');
-    nextButton.classList.remove('hide');
+    tallyAreaDiv.classList.remove('hide');    
     answersContainerDiv.classList.remove('hide');
     restartButton.classList.remove('hide');
     scoreMessageDiv.classList.add('hide');
@@ -105,6 +104,7 @@ function selectAnswer() {
 
     // console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
+        nextButton.classList.remove('hide');
         let answer = btn.dataset.correct;
         console.log(answer);
         if (answer === 'true') {
