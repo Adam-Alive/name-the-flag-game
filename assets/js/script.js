@@ -148,7 +148,6 @@ function setNextQuestion() {
     resetAnswerButtons();
     incrementQuestionTally();
     // console.log(currentFlagIndex);
-
 }
 
 function incrementQuestionTally() {
@@ -165,9 +164,6 @@ function resetAnswerButtons() {
     });
 }
 
-// Need function to reset questionTally to 1/20 and scoreTally to 0
-
-
 // Display total score and message
 // Display Play Again button
 function endGame() {
@@ -177,7 +173,6 @@ function endGame() {
     console.log('ENDGAME IS CALLED!!!');
     totalScore.innerText = document.getElementById('score-tally').innerText;    
 }
-
 
 // *** Temporary functions for testing ***
 function test() {
