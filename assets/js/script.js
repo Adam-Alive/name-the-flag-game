@@ -13,6 +13,7 @@ const welcomeTextDiv = document.getElementById('welcome-text');
 const flagImage = document.getElementById('flag-image');
 const tallyAreaDiv = document.getElementById('tally-area');
 const answersContainerDiv = document.getElementById('answers-container');
+const questionTally = document.getElementById('question-tally');
 const scoreTally = document.getElementById('score-tally');
 const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
@@ -113,7 +114,8 @@ function selectAnswer() {
         if (answer === 'true') {
             btn.classList.add('flag-btn-true');
             incrementScore();
-        } else {
+        } 
+        if (answer === 'false') {
             btn.classList.add('flag-btn-false');
         }
     });
@@ -143,8 +145,8 @@ function setNextQuestion() {
 }
 
 function incrementQuestionTally() {
-    let previousTally = parseInt(document.getElementById('question-tally').innerText);
-    document.getElementById('question-tally').innerText = ++previousTally;
+    let previousQuestionTally = parseInt(questionTally.innerText);
+    questionTally.innerText = ++previousQuestionTally;  
 }
 
 // Clears green and red background colour from answer buttons for next question
