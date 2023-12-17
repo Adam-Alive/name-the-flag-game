@@ -140,7 +140,7 @@ function incrementScore() {
     scoreTally.innerText = ++previousScore;
 }
 
-// Go to next question and increment question number
+// Go to next question and increment question tally number (n/20)
 function setNextQuestion() {
     console.log('this is setNextQuestion!!!');
     showFlagQuestion();
@@ -178,4 +178,4 @@ function endGame() {
 function test() {
     console.log('next button has been clicked');
 }
-// *** END (REMOVE)
+// *** END OF CODE ***
