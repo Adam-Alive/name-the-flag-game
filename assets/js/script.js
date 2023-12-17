@@ -1,5 +1,5 @@
 // * VARIABLES * //
-
+//
 // Constant variables related to the DOM
 const startButton = document.getElementById('start-btn');
 const flagButtons = document.querySelectorAll('.flag-btn');
@@ -39,7 +39,7 @@ nextButton.addEventListener('click', () => {
 });
 
 // * FUNCTIONS * //
-
+//
 // Select button functions
 function userSelectedButton() {
     console.log('flag button has been clicked!!!)');
@@ -78,6 +78,16 @@ function startGame() {
     // Continue
     showFlagAnswers();
     resetAnswerButtons();    
+}
+
+// *** Need to work out how to reset the dataset and shuffle again?? *** 
+function resetGame() {
+    restartButton.classList.add('hide');
+    nextButton.classList.add('hide');
+    questionTally.innerText = `1`;
+    scoreTally.innerText = `0`;
+    currentFlagIndex = 0;
+    startGame();
 }
 
 // Display flag image for question
@@ -167,15 +177,7 @@ function endGame() {
     console.log('ENDGAME IS CALLED!!!');
     totalScore.innerText = document.getElementById('score-tally').innerText;    
 }
-// *** Need to work out how to reset the dataset and shuffle again?? *** 
-function resetGame () {
-    restartButton.classList.add('hide');
-    nextButton.classList.add('hide');   
-    questionTally.innerText = `1`;
-    scoreTally.innerText = `0`;
-    currentFlagIndex = 0;
-    startGame();
-}
+
 
 // *** Temporary functions for testing ***
 function test() {
