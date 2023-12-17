@@ -62,8 +62,7 @@ function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
     tallyAreaDiv.classList.remove('hide');    
-    answersContainerDiv.classList.remove('hide');
-    restartButton.classList.remove('hide');
+    answersContainerDiv.classList.remove('hide');    
     scoreMessageDiv.classList.add('hide');
     // Test code
     console.log('game has started!');
@@ -83,7 +82,7 @@ function showFlagQuestion() {
     // Test code
     console.log('this is showFlagQuestion!');
     // Continue
-    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;
+    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;    
 }
 
 //Display answer options on 3 buttons and assign answer value to each
@@ -105,6 +104,7 @@ function selectAnswer() {
     // console.log('select answer function is linked to userSelectedButton()');
     flagButtons.forEach(btn => {
         nextButton.classList.remove('hide');
+        restartButton.classList.remove('hide');
         let answer = btn.dataset.correct;
         console.log(answer);
         if (answer === 'true') {

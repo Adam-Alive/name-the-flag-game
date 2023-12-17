@@ -90,6 +90,10 @@ img {
     padding: 2px 0 2px 0;
 }
 
+#flag-one {
+    margin-top: 20px;
+}
+
 .flag-btn:active,
 .flag-btn:hover {
     background-color: rgb(34, 135, 202);
