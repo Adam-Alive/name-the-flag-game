@@ -59,7 +59,7 @@ function enableButtons() {
     });
 }
 
-// Start and restart game
+// Start game
 function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
@@ -77,8 +77,7 @@ function startGame() {
     console.log(shuffledFlagData);
     // Continue
     showFlagAnswers();
-    resetAnswerButtons();
-    
+    resetAnswerButtons();    
 }
 
 // Display flag image for question
@@ -102,35 +101,33 @@ function showFlagAnswers() {
 // Assign background colour (bgc) to buttons according to correct/incorrect value
 // Click correct button === green bgc
 // Click incorrect button === red bgc colour and show correct button === green bgc
-
-function selectAnswer() {
-
-    // console.log('select answer function is linked to userSelectedButton()');
-    flagButtons.forEach(btn => {
-        nextButton.classList.remove('hide');
-        restartButton.classList.remove('hide');
+function selectAnswer() {  
+    flagButtons.forEach(btn => {        
         let answer = btn.dataset.correct;
         console.log(answer);
         if (answer === 'true') {
             btn.classList.add('flag-btn-true');
             incrementScore();
-        } 
-        if (answer === 'false') {
+        } else {
             btn.classList.add('flag-btn-false');
         }
     });
+    // Test code
     console.log(currentFlagIndex);
+    // Continue
     if (currentFlagIndex >= 5) {
         console.log('end game');
         endGame();
     };
+    nextButton.classList.remove('hide');
+    restartButton.classList.remove('hide');
+
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
     console.log('correct answer - score +1');
     let previousScore = parseInt(scoreTally.innerText);
     scoreTally.innerText = ++previousScore;
-
 }
 
 // Go to next question and increment question number
