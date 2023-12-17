@@ -172,26 +172,12 @@ function endGame() {
 }
 // *** Need to work out how to reset the dataset and shuffle again?? *** 
 function resetGame () {
-    startButton.classList.add('hide');
-    welcomeTextDiv.classList.add('hide');
-    tallyAreaDiv.classList.remove('hide');
-    answersContainerDiv.classList.remove('hide');
-    scoreMessageDiv.classList.add('hide');
     restartButton.classList.add('hide');
-    nextButton.classList.add('hide');
-
-    let flagImage = document.getElementById('flag-image');
-    flagImage.style.border = '1px solid rgb(10, 13, 17)';
-    // Test code
-    console.log('game has restarted!');
-    // Continue
-    shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
-    showFlagQuestion();   
-    console.log(shuffledFlagData);   
-    showFlagAnswers();
-    resetAnswerButtons();
+    nextButton.classList.add('hide');   
     questionTally.innerText = `1`;
     scoreTally.innerText = `0`;
+    currentFlagIndex = 0;
+    startGame();
 }
 
 // *** Temporary functions for testing ***
