@@ -64,6 +64,8 @@ function startGame() {
     tallyAreaDiv.classList.remove('hide');    
     answersContainerDiv.classList.remove('hide');    
     scoreMessageDiv.classList.add('hide');
+    let flagImage = document.getElementById('flag-image');
+    flagImage.style.border = '1px solid rgb(10, 13, 17)';
     // Test code
     console.log('game has started!');
     // Continue
