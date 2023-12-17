@@ -184,23 +184,4 @@ function resetGame () {
 function test() {
     console.log('next button has been clicked');
 }
-//END
-
-
-// *** Temporary code for testing ***
-// console.log(flagData);
-
-// console.log(flagData[1]);
-
-// console.log(flagData[2].flag);
-
-// for (let flag of flagData) {
-//     console.log(flag);
-// }
-
-// console.log(flagData[2].options[1]);
-
-// console.log(flagData[2].options[1].text);
-
-// console.log(flagData[3].options[2].correct);
-// END
+// *** END (REMOVE)
