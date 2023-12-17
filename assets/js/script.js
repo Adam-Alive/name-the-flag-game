@@ -13,6 +13,7 @@ const welcomeTextDiv = document.getElementById('welcome-text');
 const flagImage = document.getElementById('flag-image');
 const tallyAreaDiv = document.getElementById('tally-area');
 const answersContainerDiv = document.getElementById('answers-container');
+const scoreTally = document.getElementById('score-tally');
 const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
 
@@ -124,9 +125,10 @@ function selectAnswer() {
 }
 // Increment score by 1 if answer correct
 function incrementScore() {
-    // console.log('correct answer - score +1');
-    let previousScore = parseInt(document.getElementById('score-tally').innerText);
-    document.getElementById('score-tally').innerText = ++previousScore;
+    console.log('correct answer - score +1');
+    let previousScore = parseInt(scoreTally.innerText);
+    scoreTally.innerText = ++previousScore;
+
 }
 
 // Go to next question and increment question number
