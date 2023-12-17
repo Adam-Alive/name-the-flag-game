@@ -170,7 +170,7 @@ function endGame() {
     console.log('ENDGAME IS CALLED!!!');
     totalScore.innerText = document.getElementById('score-tally').innerText;    
 }
-
+// *** Need to work out how to reset the dataset and shuffle again?? *** 
 function resetGame () {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
