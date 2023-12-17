@@ -25,8 +25,8 @@ let currentFlagIndex = 0;
 // * EVENT LISTENERS * //
 //
 startButton.addEventListener('click', startGame);
-restartButton.addEventListener('click', startGame);
-playAgainButton.addEventListener('click', startGame);
+restartButton.addEventListener('click', resetGame);
+playAgainButton.addEventListener('click', resetGame);
 
 flagButtons.forEach(btn => {
     btn.addEventListener('click', userSelectedButton);
@@ -169,6 +169,29 @@ function endGame() {
     scoreMessageDiv.classList.remove('hide');
     console.log('ENDGAME IS CALLED!!!');
     totalScore.innerText = document.getElementById('score-tally').innerText;    
+}
+
+function resetGame () {
+    startButton.classList.add('hide');
+    welcomeTextDiv.classList.add('hide');
+    tallyAreaDiv.classList.remove('hide');
+    answersContainerDiv.classList.remove('hide');
+    scoreMessageDiv.classList.add('hide');
+    restartButton.classList.add('hide');
+    nextButton.classList.add('hide');
+
+    let flagImage = document.getElementById('flag-image');
+    flagImage.style.border = '1px solid rgb(10, 13, 17)';
+    // Test code
+    console.log('game has restarted!');
+    // Continue
+    shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
+    showFlagQuestion();   
+    console.log(shuffledFlagData);   
+    showFlagAnswers();
+    resetAnswerButtons();
+    questionTally.innerText = `1`;
+    scoreTally.innerText = `0`;
 }
 
 // *** Temporary functions for testing ***
