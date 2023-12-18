@@ -91,11 +91,11 @@ img {
 #flag-one {
     margin-top: 20px;
 }
-
-.flag-btn:active,
+/* I have transferred the code below to media queries for screens 768px+ but it still shows active on small screens ?? */
+/* .flag-btn:active,
 .flag-btn:hover {
     background-color: rgb(34, 135, 202);
-}
+} */
 
 .flag-btn-true {
     background-color: rgb(0, 128, 0);
@@ -120,11 +120,11 @@ img {
     color: rgb(255, 255, 255);
     background-color: rgb(34, 135, 202);
 }
-
-.game-btn:active,
+/* I have transferred the code below to media queries for screens 768px+ but it still shows active on small screens ?? */
+/* .game-btn:active,
 .game-btn:hover {
     background-color: rgb(61, 61, 245);
-}
+} */
 
 /* Message for total score */
 .message-text {
@@ -149,6 +149,16 @@ footer {
         height: 35%;
         width: 35%;
     }
+
+.flag-btn:active,
+.flag-btn:hover {
+    background-color: rgb(34, 135, 202);
+}
+
+.game-btn:active,
+.game-btn:hover {
+    background-color: rgb(61, 61, 245);
+}
 }
 
 /* Hide and Disable Styling */
