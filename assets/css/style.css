@@ -140,6 +140,7 @@ footer {
         width: 35%;
     }
 
+/* Button styles */
 .flag-btn:active,
 .flag-btn:hover {
     background-color: rgb(34, 135, 202);
