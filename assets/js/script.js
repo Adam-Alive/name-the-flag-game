@@ -24,7 +24,7 @@ const totalScore = document.getElementById('total-score');
 // Variables for game set-up and play
 let shuffledFlagData;
 let currentFlagIndex = 0;
-let maxQuestions = 20;
+let maxQuestions = 10;
 questionMax.forEach(span => {
     span.innerText = maxQuestions;
 });
@@ -78,7 +78,7 @@ function startGame() {
     welcomeTextDiv.classList.add('hide');
     tallyAreaDiv.classList.remove('hide');    
     answersContainerDiv.classList.remove('hide');    
-    scoreMessageDiv.classList.add('hide');    
+    scoreMessageDiv.classList.add('hide');       
     flagImage.style.border = '1px solid rgb(10, 13, 17)';
     flagImage.alt ='Flag image selected randomly for each question'
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
@@ -125,7 +125,7 @@ function selectAnswer() {
             btn.classList.add('flag-btn-false');
         }
     });
-       if (currentFlagIndex >= maxQuestions) {        
+       if (currentFlagIndex >= maxQuestions - 1) {        
         endGame();
     } else {
     nextButton.classList.remove('hide');

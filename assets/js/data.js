@@ -63,7 +63,7 @@ const flagData = [
         options: [
             { text: 'Bahrain', correct: true},
             { text: 'Antigua and Barbuda', correct: false},
-            { text: 'Azerbaijan', correct: fasle},
+            { text: 'Azerbaijan', correct: false},
         ]
     },
     {
