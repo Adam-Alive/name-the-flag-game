@@ -55,7 +55,7 @@ const flagData = [
         options: [
             { text: 'Guyana', correct: true },
             { text: 'Angola', correct: false },
-            { text: 'Barbados', correct: false },
+            { text: 'Maldives', correct: false },
         ]
     },
     {
@@ -95,7 +95,7 @@ const flagData = [
         options: [
             { text: 'Nepal', correct: false },
             { text: 'Macao', correct: true },
-            { text: 'Afghanistan', correct: false },
+            { text: 'Egypt', correct: false },
         ]
     },
     {
@@ -118,14 +118,14 @@ const flagData = [
         flag: 'Ghana',
         options: [
             { text: 'Ghana', correct: true },
-            { text: 'Sierra Leone', correct: false },
-            { text: 'South Korea', correct: false },
+            { text: 'Thailand', correct: false },
+            { text: 'Belize', correct: false },
         ]
     },
     {
         flag: 'Kyrgyzstan',
         options: [
-            { text: 'South Korea', correct: false },
+            { text: 'North Korea', correct: false },
             { text: 'Namibia', correct: false },
             { text: 'Kyrgyzstan', correct: true },
         ]
@@ -133,7 +133,7 @@ const flagData = [
     {
         flag: 'Latvia',
         options: [
-            { text: 'Poland', correct: false },
+            { text: 'Faeroe Islands', correct: false },
             { text: 'Latvia', correct: true },
             { text: 'Costa Rica', correct: false },
         ]
@@ -181,7 +181,7 @@ const flagData = [
     {
         flag: 'Armenia',
         options: [
-            { text: 'Afghanistan', correct: false },
+            { text: 'Lesotho', correct: false },
             { text: 'Armenia', correct: true },
             { text: 'Greece', correct: false },
         ]
@@ -199,7 +199,7 @@ const flagData = [
         options: [
             { text: 'Tajikistan', correct: false },
             { text: 'Lebanon', correct: true },
-            { text: 'Malta', correct: false },
+            { text: 'Finland', correct: false },
         ]
     },
     {
@@ -271,7 +271,7 @@ const flagData = [
         options: [
             { text: 'Malaysia', correct: false },
             { text: 'Indonesia', correct: true },
-            { text: 'Brunei', correct: false },
+            { text: 'Jordan', correct: false },
         ]
     },
     {
@@ -303,7 +303,7 @@ const flagData = [
         options: [
             { text: 'Bosnia and Herzegovina', correct: true },
             { text: 'Qatar', correct: false },
-            { text: 'Latvia', correct: false },
+            { text: 'Iceland', correct: false },
         ]
     },
     {
@@ -343,7 +343,7 @@ const flagData = [
         options: [
             { text: 'Iraq', correct: false },
             { text: 'Comoros', correct: true },
-            { text: 'Channel Islands', correct: false },
+            { text: 'Luxembourg', correct: false },
         ]
     },
     {
@@ -359,7 +359,7 @@ const flagData = [
         options: [
             { text: 'San Marino', correct: false },
             { text: 'Gambia', correct: true },
-            { text: 'Myanmar', correct: false },
+            { text: 'Gibraltar', correct: false },
         ]
     },
     {
