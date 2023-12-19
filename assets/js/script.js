@@ -16,6 +16,7 @@ const flagImage = document.getElementById('flag-image');
 const tallyAreaDiv = document.getElementById('tally-area');
 const answersContainerDiv = document.getElementById('answers-container');
 const questionTally = document.getElementById('question-tally');
+const questionMax = document.querySelectorAll('.question-max');
 const scoreTally = document.getElementById('score-tally');
 const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
@@ -23,6 +24,10 @@ const totalScore = document.getElementById('total-score');
 // Variables for game set-up and play
 let shuffledFlagData;
 let currentFlagIndex = 0;
+let maxQuestions = 20;
+questionMax.forEach(span => {
+    span.innerText = maxQuestions;
+});
 
 // * EVENT LISTENERS * //
 //
@@ -120,7 +125,7 @@ function selectAnswer() {
             btn.classList.add('flag-btn-false');
         }
     });
-       if (currentFlagIndex >= 5) {        
+       if (currentFlagIndex >= maxQuestions) {        
         endGame();
     } else {
     nextButton.classList.remove('hide');
