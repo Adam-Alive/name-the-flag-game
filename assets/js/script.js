@@ -93,10 +93,7 @@ function resetGame() {
 }
 
 // Display flag image for question
-function showFlagQuestion() {
-    // Test code
-    console.log('this is showFlagQuestion!');
-    // Continue
+function showFlagQuestion() {    
     flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;    
 }
 
@@ -115,8 +112,7 @@ function showFlagAnswers() {
 // Click incorrect button === red bgc colour and show correct button === green bgc
 function selectAnswer() {  
     flagButtons.forEach(btn => {        
-        let answer = btn.dataset.correct;
-        console.log(answer);
+        let answer = btn.dataset.correct;        
         if (answer === 'true') {
             btn.classList.add('flag-btn-true');
             } else {
@@ -132,8 +128,7 @@ function selectAnswer() {
 }
 
 // Increment score by 1 if answer correct
-function incrementScore() {
-    console.log('correct answer - score +1');
+function incrementScore() {    
     let previousScore = parseInt(scoreTally.innerText);
     scoreTally.innerText = ++previousScore;
 }
@@ -144,8 +139,7 @@ function setNextQuestion() {
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
-    incrementQuestionTally();
-    // console.log(currentFlagIndex);
+    incrementQuestionTally();    
 }
 
 function incrementQuestionTally() {
@@ -168,10 +162,5 @@ function endGame() {
     restartButton.classList.add('hide');
     scoreMessageDiv.classList.remove('hide');    
     totalScore.innerText = document.getElementById('score-tally').innerText;    
-}
-
-// *** Temporary functions for testing ***
-function test() {
-    console.log('next button has been clicked');
 }
 // *** END OF CODE ***
