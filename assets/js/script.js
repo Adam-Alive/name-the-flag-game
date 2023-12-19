@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // * VARIABLES * //
 //
 // Constant variables related to the DOM
@@ -71,8 +73,7 @@ function startGame() {
     welcomeTextDiv.classList.add('hide');
     tallyAreaDiv.classList.remove('hide');    
     answersContainerDiv.classList.remove('hide');    
-    scoreMessageDiv.classList.add('hide');
-    let flagImage = document.getElementById('flag-image');
+    scoreMessageDiv.classList.add('hide');    
     flagImage.style.border = '1px solid rgb(10, 13, 17)';
     flagImage.alt ='Flag image selected randomly for each question'
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
