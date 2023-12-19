@@ -105,6 +105,7 @@ function showFlagQuestion() {
 
 //Display answer options on 3 buttons and assign answer value to each
 function showFlagAnswers() {
+    flagData[currentFlagIndex].options.sort(() => Math.random() - 0.5);
     flagOneButton.innerText = flagData[currentFlagIndex].options[0].text;
     flagTwoButton.innerText = flagData[currentFlagIndex].options[1].text;
     flagThreeButton.innerText = flagData[currentFlagIndex].options[2].text;
