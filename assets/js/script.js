@@ -140,8 +140,7 @@ function incrementScore() {
 }
 
 // Go to next question and increment question tally number (n/20)
-function setNextQuestion() {
-    console.log('this is setNextQuestion!!!');
+function setNextQuestion() {    
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
