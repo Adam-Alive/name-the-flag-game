@@ -24,7 +24,7 @@ const totalScore = document.getElementById('total-score');
 // Variables for game set-up and play
 let shuffledFlagData;
 let currentFlagIndex = 0;
-let maxQuestions = 10;
+let maxQuestions = 20;
 questionMax.forEach(span => {
     span.innerText = maxQuestions;
 });
