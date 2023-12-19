@@ -36,6 +36,8 @@ flagButtons.forEach(btn => {
 
 nextButton.addEventListener('click', () => {
     currentFlagIndex++;
+    restartButton.classList.add('hide');
+    nextButton.classList.add('hide');
     enableButtons();
     setNextQuestion();
 });
@@ -43,8 +45,7 @@ nextButton.addEventListener('click', () => {
 // * FUNCTIONS * //
 //
 // Select button functions
-function userSelectedButton(e) {
-    console.log('flag button has been clicked!!!)');
+function userSelectedButton(e) {    
     if (e.target.dataset.correct === 'true') {
         incrementScore();
     }
