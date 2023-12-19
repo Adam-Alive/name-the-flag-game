@@ -74,7 +74,7 @@ p {
 
 #flag-container img {
     max-width: 70vw;
-    max-height: 40vh;
+    max-height: 30vh;
     object-fit:contain;
 }
 
