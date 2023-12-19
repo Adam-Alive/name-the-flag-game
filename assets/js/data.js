@@ -441,6 +441,5 @@ const flagData = [
             { text: 'French Guiana', correct: false},
             { text: 'Nigeria', correct: false},
         ]
-    }   
-//     // Last square bracket below
+    }
 ]
