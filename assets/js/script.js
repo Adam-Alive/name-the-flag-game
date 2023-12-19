@@ -73,15 +73,9 @@ function startGame() {
     answersContainerDiv.classList.remove('hide');    
     scoreMessageDiv.classList.add('hide');
     let flagImage = document.getElementById('flag-image');
-    flagImage.style.border = '1px solid rgb(10, 13, 17)';
-    // Test code
-    console.log('game has started!');
-    // Continue
+    flagImage.style.border = '1px solid rgb(10, 13, 17)';    
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
-    showFlagQuestion();
-    // Test code
-    console.log(shuffledFlagData);
-    // Continue
+    showFlagQuestion();   
     showFlagAnswers();
     resetAnswerButtons();    
 }
@@ -93,6 +87,7 @@ function resetGame() {
     questionTally.innerText = `1`;
     scoreTally.innerText = `0`;
     currentFlagIndex = 0;
+    enableButtons();
     startGame();
 }
 
@@ -170,8 +165,7 @@ function resetAnswerButtons() {
 function endGame() {
     nextButton.classList.add('hide');
     restartButton.classList.add('hide');
-    scoreMessageDiv.classList.remove('hide');
-    console.log('ENDGAME IS CALLED!!!');
+    scoreMessageDiv.classList.remove('hide');    
     totalScore.innerText = document.getElementById('score-tally').innerText;    
 }
 
