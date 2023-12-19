@@ -127,17 +127,14 @@ function selectAnswer() {
             btn.classList.add('flag-btn-false');
         }
     });
-    // Test code
-    console.log(currentFlagIndex);
-    // Continue
-    if (currentFlagIndex >= 5) {
-        console.log('end game');
+       if (currentFlagIndex >= 5) {        
         endGame();
-    };
+    } else {
     nextButton.classList.remove('hide');
     restartButton.classList.remove('hide');
-
+    }
 }
+
 // Increment score by 1 if answer correct
 function incrementScore() {
     console.log('correct answer - score +1');
