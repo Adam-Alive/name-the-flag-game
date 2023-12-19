@@ -73,7 +73,8 @@ function startGame() {
     answersContainerDiv.classList.remove('hide');    
     scoreMessageDiv.classList.add('hide');
     let flagImage = document.getElementById('flag-image');
-    flagImage.style.border = '1px solid rgb(10, 13, 17)';    
+    flagImage.style.border = '1px solid rgb(10, 13, 17)';
+    flagImage.alt ='Flag image selected randomly for each question'
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
     showFlagQuestion();   
     showFlagAnswers();
