@@ -29,7 +29,9 @@ restartButton.addEventListener('click', resetGame);
 playAgainButton.addEventListener('click', resetGame);
 
 flagButtons.forEach(btn => {
-    btn.addEventListener('click', userSelectedButton);
+    btn.addEventListener('click', function(e) {
+        userSelectedButton(e);
+    });
 });
 
 nextButton.addEventListener('click', () => {
@@ -41,8 +43,11 @@ nextButton.addEventListener('click', () => {
 // * FUNCTIONS * //
 //
 // Select button functions
-function userSelectedButton() {
+function userSelectedButton(e) {
     console.log('flag button has been clicked!!!)');
+    if (e.target.dataset.correct === 'true') {
+        incrementScore();
+    }
     selectAnswer();
     disableButtons();
 }
@@ -117,8 +122,7 @@ function selectAnswer() {
         console.log(answer);
         if (answer === 'true') {
             btn.classList.add('flag-btn-true');
-            incrementScore();
-        } else {
+            } else {
             btn.classList.add('flag-btn-false');
         }
     });
