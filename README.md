@@ -100,11 +100,10 @@ The following features would add to the user experience in future:
 - [GitHub](https://github.com) for secure online code storage.
 - [GitHub Pages](https://pages.github.com) for hosting the deployed front-end site.
 - [Codeanywhere](https://codeanywhere.com) as a cloud-based IDE for development.
-- [](https://codeanywhere.com) as a cloud-based IDE for development.
 
 ## Testing
 
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+Please see the [TESTING.md](TESTING.md) file for all testing.
 
 ## Deployment
 
@@ -151,30 +150,15 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Content
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | Tool to help generate the Markdown files |
-| [W3Schools](https://www.w3schools.com/jsref/jsref_foreach.asp) | entire site | JS forEach() method |
-| [EDUCBA](https://www.educba.com/dataset-javascript/) | entire site | Using dataset in JS |
-| [FreeCodeCAmp](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/) | script.js | Shuffling arrays in JS |
-| [Random.org](https://www.random.org/) | data.js |  Tool to generate random list of countries when compiling questions dictinary in data.js|
+| [W3Schools](https://www.w3schools.com/jsref/jsref_foreach.asp) | script.js | JS forEach() method |
+| [EDUCBA](https://www.educba.com/dataset-javascript/) | script.js | Using dataset in JS |
+| [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/) | script.js | Shuffling arrays in JS |
+| [Random.org](https://www.random.org/) | data.js |  Tool to generate random lists of countries when compiling questions dictionary in data.js|
 
 ### Media
 
@@ -183,7 +167,7 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | [Freepik](https://www.freepik.com/icon/flag_319908) | entire site | image | Favicon on all pages |
 | [Pixaby](https://pixabay.com/service/license-summary/) | home page | image | Globe-shaped flag collage  |
 | [Flagpedia](https://flagpedia.net/download) | game pages | image | Images of world flags |
-| [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | game pages | image | convert png to webp |
+| [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | game pages | image | Convert png to webp |
 
 ### Acknowledgements
 
