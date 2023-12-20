@@ -331,11 +331,11 @@ const flagData = [
         ]
     },
     {
-        flag: 'Timor-Leste',
+        flag: 'Timor Leste',
         options: [
             { text: 'Belgium', correct: false },
             { text: 'Canada', correct: false },
-            { text: 'Timor-Leste', correct: true },
+            { text: 'Timor Leste', correct: true },
         ]
     },
     {
@@ -391,7 +391,7 @@ const flagData = [
         options: [
             { text: 'Chile', correct: true},
             { text: 'Laos', correct: false},
-            { text: 'Laos', correct: false},
+            { text: 'Togo', correct: false},
         ]
     },
     {
