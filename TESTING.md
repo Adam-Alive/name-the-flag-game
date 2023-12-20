@@ -14,8 +14,7 @@ with the project providing an easy and straightforward way for the users to achi
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
+
 
 **IMPORTANT**: You must provide a screenshot for each file you validate.
 
