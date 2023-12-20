@@ -9,42 +9,25 @@ For each question, a flag image will appear on screen and users can choose a cou
 
 There are 20 questions and a running score is shown along with the total score at the game's completion.
 
-Users can restart the game at any time, both during the game and at the end to start a new one.
+Users can reset the game at any time, both during play and at the end to start a new game.
 
 ## Target Audience
 The target audience is children and adults who will be able to enjoy testing their knowledge and learn more about world flags. 
 
-**ADD mockup image once complete.**
-<https://ui.dev/amiresponsive?url=https://adam-alive.github.io/name-the-flag-game>
-
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-<https://pandao.github.io/editor.md/en.html>
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![Game Mockup](documentation/mockup.png)
 
 ## UX
 ### Initial Design
-Draft visual of how the game will appear on-screen:
-![screenshot](documentation/initial-game-design.pdf)
+This image shows the initial game design, drafted in Word, incorporating all stages of the game summarised above, and which will be hidden/unhidden as the game progresses.
 
+![Initial Design](documentation/initial-design.png)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+I chose 20 as the number of questions in order to give the user a sense of 'building up' during the game and to increase their learning opportunities.
 
 ### Colour Scheme
+In keeping with the simplicity of the game, I wanted to use minimal background colours so chose white and a light blue, also conscious that the flags are the game's focus and should not be crowded out by other colours.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Explain your colours and the colour scheme.
+A darker blue seemed appropriate for the answer buttons, slightly lighter for the navigation buttons and which.... 
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
@@ -56,7 +39,8 @@ Explain your colours and the colour scheme.
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 Consider adding a link and screenshot for your colour scheme using "coolors".
-<https://coolors.co/generate>
+
+<https://www.w3schools.com/colors/colors_rgb.asp>
 
 When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
 
