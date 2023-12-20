@@ -7,7 +7,11 @@
     <!-- Page title -->
     <title>Name The Flag Game</title>
     <!-- Favicon -->
-    <link rel="shortcut-icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut-icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,7 +28,7 @@
       type="image/png"
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
-    />    
+    />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -42,17 +46,23 @@
             Welcome to this fun quiz to test your knowledge of flags around the
             world.
           </p>
-            <p>How many will you get out of <span class="question-max">20</span>?</p>
+          <p>
+            How many will you get out of <span class="question-max">20</span>?
+          </p>
         </div>
       </section>
       <!-- Score and flag display section -->
       <section>
         <div id="tally-area" class="tally-display hide">
-        <p>Question <span id="question-tally">1</span> / <span class="question-max">20</span></p>
-        <p> Score: <span id="score-tally">0</span></p>
+          <p>
+            Question <span id="question-tally">1</span> /
+            <span class="question-max">20</span>
+          </p>
+          <p>Score: <span id="score-tally">0</span></p>
         </div>
         <div id="flag-container">
-          <img id="flag-image"
+          <img
+            id="flag-image"
             src="assets/images/flags.webp"
             alt="Colourful collage of world flags in a circle representing the globe"
           />
@@ -61,39 +71,24 @@
       <!-- Flag options section -->
       <section>
         <div id="answers-container" class="answers-options hide">
-          <button id="flag-one" class="flag-btn">
-            Option 1
-          </button>
-          <button id="flag-two" class="flag-btn">
-            Option 2
-          </button>
-          <button id="flag-three" class="flag-btn">
-            Option 3
-          </button>
+          <button id="flag-one" class="flag-btn">Option 1</button>
+          <button id="flag-two" class="flag-btn">Option 2</button>
+          <button id="flag-three" class="flag-btn">Option 3</button>
         </div>
         <div id="game-btn-container">
-          <button id="start-btn" class="game-btn">
-            Start
-          </button>
-          <button id="next-btn" class="game-btn hide">
-            Next
-          </button>
-          <button id="restart-btn" class="game-btn hide">
-            Restart
-          </button>
+          <button id="start-btn" class="game-btn">Start</button>
+          <button id="next-btn" class="game-btn hide">Next</button>
+          <button id="restart-btn" class="game-btn hide">Restart</button>
         </div>
       </section>
       <!-- Total score and restart section -->
       <section>
         <div id="score-message" class="hide">
           <p class="message-text">
-            <span>your total score is:  </span>
-            <span id="total-score">
-                0</span>
+            <span>your total score is: </span>
+            <span id="total-score"> 0</span>
           </p>
-          <button id="play-again-btn" class="game-btn">
-            Play Again
-          </button>
+          <button id="play-again-btn" class="game-btn">Play Again</button>
         </div>
       </section>
     </main>
