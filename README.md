@@ -48,46 +48,39 @@ A darker blue seemed appropriate for the answer buttons with a slightly lighter 
 
 ## Features
 
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
-- **Title for feature #1**
+- **Home Page**
+  - The user is greeted by a colourful and eye-catching globe-shaped montage of flags. A brief welcome message invites the user to learn and have fun and the start button below the image provides a clear call to action.
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](documentation/home-page.png)
 
-![screenshot](documentation/feature01.png)
+- **Game Start**
+  - Details about
 
-- **Title for feature #2**
+![screenshot](documentation/game-start.png)
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Correct Answer and Next Question**
+- 
+  - Details 
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/correct-answer.png)
 
-- **Title for feature #3**
+- **Wrong Answer and Restart**
+  - Details
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](documentation/wrong-answer.png)
 
-![screenshot](documentation/feature03.png)
+- **Total Score and Play Again**
+  - Details 
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/total-score.png)
 
-Repeat as necessary for as many features as your site contains.
+- **New Game**
+  - Details
 
-Hint: the more, the merrier!
+![screenshot](documentation/start-again.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Future Features
 
