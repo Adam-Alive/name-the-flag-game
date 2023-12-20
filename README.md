@@ -100,6 +100,7 @@ The following features would add to the user experience in future:
 - [GitHub](https://github.com) for secure online code storage.
 - [GitHub Pages](https://pages.github.com) for hosting the deployed front-end site.
 - [Codeanywhere](https://codeanywhere.com) as a cloud-based IDE for development.
+- [](https://codeanywhere.com) as a cloud-based IDE for development.
 
 ## Testing
 
@@ -172,24 +173,17 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | Tool to help generate the Markdown files |
 | [W3Schools](https://www.w3schools.com/jsref/jsref_foreach.asp) | entire site | JS forEach() method |
 | [EDUCBA](https://www.educba.com/dataset-javascript/) | entire site | Using dataset in JS |
-
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
+| [FreeCodeCAmp](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/) | script.js | Shuffling arrays in JS |
+| [Random.org](https://www.random.org/) | data.js |  Tool to generate random list of countries when compiling questions dictinary in data.js|
 
 ### Media
 
-
-
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Random.org](https://www.random.org/) | home page | video | tool to generate random list of countries when compiling questions dictinary in data.js |
-| [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | entire site | image | convert png to webp |
+| [Freepik](https://www.freepik.com/icon/flag_319908) | entire site | image | Favicon on all pages |
+| [Pixaby](https://pixabay.com/service/license-summary/) | home page | image | Globe-shaped flag collage  |
+| [Flagpedia](https://flagpedia.net/download) | game pages | image | Images of world flags |
+| [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | game pages | image | convert png to webp |
 
 ### Acknowledgements
 
