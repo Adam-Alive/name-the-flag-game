@@ -48,8 +48,6 @@ A darker blue seemed appropriate for the answer buttons with a slightly lighter 
 
 ## Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 In this section, you should go over the different parts of your project,
 and describe each in a sentence or so.
 
