@@ -100,7 +100,7 @@ function resetGame() {
 
 // Display flag image for question
 function showFlagQuestion() {    
-    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replace(' ', '-')}.webp`;    
+    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replaceAll(' ', '-')}.webp`;    
 }
 
 //Display answer options on 3 buttons and assign answer value to each
