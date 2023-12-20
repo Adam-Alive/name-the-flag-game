@@ -1,6 +1,7 @@
 # [NAME THE FLAG GAME](https://adam-alive.github.io/name-the-flag-game)
 
 ## Project Purpose
+
 The purpose of this project is to create a simple and intuitive quiz-game where users can test their knowledge of world flags.
 
 Users will be able to navigate the game with minimal instructions, enjoying a clean and uncluttered design.
@@ -12,12 +13,15 @@ There are 20 questions and a running score is shown along with the total score a
 Users can reset the game at any time, both during play and at the end to start a new game.
 
 ## Target Audience
-The target audience is children and adults who will be able to enjoy testing their knowledge and learn more about world flags. 
+
+The target audience is children and adults who will be able to enjoy testing their knowledge and learn more about world flags.
 
 ![Game Mockup](documentation/mockup.png)
 
 ## UX
+
 ### Initial Design
+
 This image shows the initial game design, drafted in Word, incorporating all stages of the game summarised above, and which will be hidden/unhidden as the game progresses.
 
 ![Initial Design](documentation/initial-design.png)
@@ -25,9 +29,10 @@ This image shows the initial game design, drafted in Word, incorporating all sta
 I chose 20 as the number of questions in order to give the user a sense of 'building up' during the game and to increase their learning opportunities.
 
 ### Colour Scheme
+
 In keeping with the simplicity of the game, I wanted to use minimal background colours so chose white and a light blue, also conscious that the flags are the game's focus and should not be crowded out by other colours.
 
-A darker blue seemed appropriate for the answer buttons, slightly lighter for the navigation buttons and which.... 
+A darker blue seemed appropriate for the answer buttons, slightly lighter for the navigation buttons and which
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
