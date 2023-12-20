@@ -39,8 +39,8 @@ A darker blue seemed appropriate for the answer buttons with a slightly lighter 
 - `rgb(176, 196, 222)` used for outer game-area.
 - `rgb(61, 61, 245)` used for answer buttons.
 - `rgb(34, 135, 202)` used for game navigation buttons.
-- `rgb(0, 128, 0)` used for correct answer buttons.
-- `rgb(255, 0, 0)` used for incorrect answer buttons.
+- `rgb(0, 128, 0)` used for correct answer buttons (a universal green for go/correct!)
+- `rgb(255, 0, 0)` used for incorrect answer buttons (a universal red for stop/incorrect!)
 
 ### Typography
 
@@ -51,54 +51,45 @@ A darker blue seemed appropriate for the answer buttons with a slightly lighter 
 ### Existing Features
 
 - **Home Page**
-  - The user is greeted by a colourful and eye-catching globe-shaped montage of flags. A brief welcome message invites the user to learn and have fun and the start button below the image provides a clear call to action.
+  - The user is greeted by a colourful and eye-catching globe-shaped collage of flags. A brief welcome message invites the user to learn and have fun and the start button provides a clear call to action.
 
 ![screenshot](documentation/home-page.png)
 
 - **Game Start**
-  - Details about
+  - A flag-image is shown with three answer buttons giving the user a choice of three countries. Above the flag is displayed the current question number (out of 20) and current score.
 
 ![screenshot](documentation/game-start.png)
 
 - **Correct Answer and Next Question**
-- 
-  - Details 
+  - The user has selected the correct answer-button which causes it to turn green and the other two buttons to turn red. The score tally increments by one and the next and restart buttons will allow the user to go to the next question or restart the game if they wish.
 
 ![screenshot](documentation/correct-answer.png)
 
 - **Wrong Answer and Restart**
-  - Details
+  - The user has selected the wrong answer-button which causes it to turn red, along with the other wrong answer. The correct answer-button turns green so the user will be able to learn the correct flag. Play continues until 20 questions have been answered or the user restarts the game.
 
 ![screenshot](documentation/wrong-answer.png)
 
 - **Total Score and Play Again**
-  - Details 
+  - After question 20 is answered, a total score message is displayed and the user can start a new game if they wish by clicking on the play again button.
 
 ![screenshot](documentation/total-score.png)
 
 - **New Game**
-  - Details
+  - The game is reset with a new flag on display, the question tally at 1/20 and the score at 0.
 
 ![screenshot](documentation/start-again.png)
 
-
 ### Future Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The following features would add to the user experience in future:
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-  - Any additional notes about this feature.
-- Title for future feature #2
-  - Any additional notes about this feature.
-- Title for future feature #3
-  - Any additional notes about this feature.
+- Encouraging Alert
+  - A pop-up alert after 10 questions have been answered to encourage the user to keep going e.g. "Half-way there, keep going!"
+- Full Score Message
+  - A score of 20/20 could display a fun and congratulatory message, perhaps with an animation or video with flags flying or a large crowd waving flags.
+- Fun Facts
+  - After each correct answer, a message displays the name of the correct countries capital city e.g. "Did you know that the capital of Venezuela is Caracas?"
 
 ## Tools & Technologies Used
 
