@@ -39,58 +39,50 @@
     </header>
     <!-- Main content -->
     <main class="game-area">
-      <!-- Welcome section  -->
-      <section>
-        <div id="welcome-text">
-          <p>
-            Welcome to this fun quiz to test your knowledge of flags around the
-            world.
-          </p>
-          <p>
-            How many will you get out of <span class="question-max">20</span>?
-          </p>
-        </div>
-      </section>
-      <!-- Score and flag display section -->
-      <section>
-        <div id="tally-area" class="tally-display hide">
-          <p>
-            Question <span id="question-tally">1</span> /
-            <span class="question-max">20</span>
-          </p>
-          <p>Score: <span id="score-tally">0</span></p>
-        </div>
-        <div id="flag-container">
-          <img
-            id="flag-image"
-            src="assets/images/flags.webp"
-            alt="Colourful collage of world flags in a circle representing the globe"
-          />
-        </div>
-      </section>
-      <!-- Flag options section -->
-      <section>
-        <div id="answers-container" class="answers-options hide">
-          <button id="flag-one" class="flag-btn">Option 1</button>
-          <button id="flag-two" class="flag-btn">Option 2</button>
-          <button id="flag-three" class="flag-btn">Option 3</button>
-        </div>
-        <div id="game-btn-container">
-          <button id="start-btn" class="game-btn">Start</button>
-          <button id="next-btn" class="game-btn hide">Next</button>
-          <button id="restart-btn" class="game-btn hide">Restart</button>
-        </div>
-      </section>
-      <!-- Total score and restart section -->
-      <section>
-        <div id="score-message" class="hide">
-          <p class="message-text">
-            <span>your total score is: </span>
-            <span id="total-score"> 0</span>
-          </p>
-          <button id="play-again-btn" class="game-btn">Play Again</button>
-        </div>
-      </section>
+      <!-- Welcome message  -->
+      <div id="welcome-text">
+        <p>
+          Welcome to this fun quiz to test your knowledge of flags around the
+          world.
+        </p>
+        <p>
+          How many will you get out of <span class="question-max">20</span>?
+        </p>
+      </div>
+      <!-- Score and flag display area -->
+      <div id="tally-area" class="tally-display hide">
+        <p>
+          Question <span id="question-tally">1</span> /
+          <span class="question-max">20</span>
+        </p>
+        <p>Score: <span id="score-tally">0</span></p>
+      </div>
+      <div id="flag-container">
+        <img
+          id="flag-image"
+          src="assets/images/flags.webp"
+          alt="Colourful collage of world flags in a circle representing the globe"
+        />
+      </div>
+      <!-- Flag answer options -->
+      <div id="answers-container" class="answers-options hide">
+        <button id="flag-one" class="flag-btn">Option 1</button>
+        <button id="flag-two" class="flag-btn">Option 2</button>
+        <button id="flag-three" class="flag-btn">Option 3</button>
+      </div>
+      <div id="game-btn-container">
+        <button id="start-btn" class="game-btn">Start</button>
+        <button id="next-btn" class="game-btn hide">Next</button>
+        <button id="restart-btn" class="game-btn hide">Restart</button>
+      </div>
+      <!-- Total score message and restart -->
+      <div id="score-message" class="hide">
+        <p class="message-text">
+          <span>your total score is: </span>
+          <span id="total-score"> 0</span>
+        </p>
+        <button id="play-again-btn" class="game-btn">Play Again</button>
+      </div>
     </main>
 
     <footer>
