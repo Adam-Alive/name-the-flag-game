@@ -365,81 +365,81 @@ const flagData = [
     {
         flag: 'Japan',
         options: [
-            { text: 'Japan', correct: true},
-            { text: 'Burundi', correct: false},
-            { text: 'Algeria', correct: false},
+            { text: 'Japan', correct: true },
+            { text: 'Burundi', correct: false },
+            { text: 'Algeria', correct: false },
         ]
     },
     {
         flag: 'Zimbabwe',
         options: [
-            { text: 'Peru', correct: false},
-            { text: 'Eswatini', correct: false},
-            { text: 'Zimbabwe', correct: true},
+            { text: 'Peru', correct: false },
+            { text: 'Eswatini', correct: false },
+            { text: 'Zimbabwe', correct: true },
         ]
     },
     {
         flag: 'Tanzania',
         options: [
-            { text: 'Central African Republic', correct: false},
-            { text: 'Tanzania', correct: true},
-            { text: 'Cameroon', correct: false},
+            { text: 'Central African Republic', correct: false },
+            { text: 'Tanzania', correct: true },
+            { text: 'Cameroon', correct: false },
         ]
     },
     {
         flag: 'Chile',
         options: [
-            { text: 'Chile', correct: true},
-            { text: 'Laos', correct: false},
-            { text: 'Togo', correct: false},
+            { text: 'Chile', correct: true },
+            { text: 'Laos', correct: false },
+            { text: 'Togo', correct: false },
         ]
     },
     {
         flag: 'Sweden',
         options: [
-            { text: 'Uzbekistan', correct: false},
-            { text: 'Sweden', correct: true},
-            { text: 'Western Sahara', correct: false},
+            { text: 'Uzbekistan', correct: false },
+            { text: 'Sweden', correct: true },
+            { text: 'Western Sahara', correct: false },
         ]
     },
     {
         flag: 'Venezuela',
         options: [
-            { text: 'Suriname', correct: false},
-            { text: 'Venezuela', correct: true},
-            { text: 'Philippines', correct: false},
+            { text: 'Suriname', correct: false },
+            { text: 'Venezuela', correct: true },
+            { text: 'Philippines', correct: false },
         ]
     },
     {
         flag: 'Monaco',
         options: [
-            { text: 'Tunisia', correct: false},
-            { text: 'Guatemala', correct: false},
-            { text: 'Monaco', correct: true},
+            { text: 'Tunisia', correct: false },
+            { text: 'Guatemala', correct: false },
+            { text: 'Monaco', correct: true },
         ]
     },
     {
         flag: 'Paraguay',
         options: [
-            { text: 'Paraguay', correct: true},
-            { text: 'Panama', correct: false},
-            { text: 'Brazil', correct: false},
+            { text: 'Paraguay', correct: true },
+            { text: 'Panama', correct: false },
+            { text: 'Brazil', correct: false },
         ]
     },
     {
         flag: 'Colombia',
         options: [
-            { text: 'Isle of Man', correct: false},
-            { text: 'Italy', correct: false},
-            { text: 'Colombia', correct: true},
+            { text: 'Isle of Man', correct: false },
+            { text: 'Italy', correct: false },
+            { text: 'Colombia', correct: true },
         ]
     },
     {
         flag: 'Sierra Leone',
         options: [
-            { text: 'Sierra Leone', correct: true},
-            { text: 'French Guiana', correct: false},
-            { text: 'Nigeria', correct: false},
+            { text: 'Sierra Leone', correct: true },
+            { text: 'French Guiana', correct: false },
+            { text: 'Nigeria', correct: false },
         ]
     }
-]
+];

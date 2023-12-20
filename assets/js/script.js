@@ -36,7 +36,7 @@ restartButton.addEventListener('click', resetGame);
 playAgainButton.addEventListener('click', resetGame);
 
 flagButtons.forEach(btn => {
-    btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', function (e) {
         userSelectedButton(e);
     });
 });
@@ -52,7 +52,7 @@ nextButton.addEventListener('click', () => {
 // * FUNCTIONS * //
 //
 // Select button functions
-function userSelectedButton(e) {    
+function userSelectedButton(e) {
     if (e.target.dataset.correct === 'true') {
         incrementScore();
     }
@@ -76,15 +76,15 @@ function enableButtons() {
 function startGame() {
     startButton.classList.add('hide');
     welcomeTextDiv.classList.add('hide');
-    tallyAreaDiv.classList.remove('hide');    
-    answersContainerDiv.classList.remove('hide');    
-    scoreMessageDiv.classList.add('hide');       
+    tallyAreaDiv.classList.remove('hide');
+    answersContainerDiv.classList.remove('hide');
+    scoreMessageDiv.classList.add('hide');
     flagImage.style.border = '1px solid rgb(10, 13, 17)';
-    flagImage.alt ='Flag image selected randomly for each question'
+    flagImage.alt = 'Flag image selected randomly for each question';
     shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
-    showFlagQuestion();   
+    showFlagQuestion();
     showFlagAnswers();
-    resetAnswerButtons();    
+    resetAnswerButtons();
 }
 
 // *** Reset the dataset and shuffle again?? *** 
@@ -99,8 +99,8 @@ function resetGame() {
 }
 
 // Display flag image for question
-function showFlagQuestion() {    
-    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replaceAll(' ', '-')}.webp`;    
+function showFlagQuestion() {
+    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replaceAll(' ', '-')}.webp`;
 }
 
 //Display answer options on 3 buttons and assign answer value to each
@@ -117,40 +117,40 @@ function showFlagAnswers() {
 // Assign background colour (bgc) to buttons according to correct/incorrect value
 // Click correct button === green bgc
 // Click incorrect button === red bgc colour and show correct button === green bgc
-function selectAnswer() {  
-    flagButtons.forEach(btn => {        
-        let answer = btn.dataset.correct;        
+function selectAnswer() {
+    flagButtons.forEach(btn => {
+        let answer = btn.dataset.correct;
         if (answer === 'true') {
             btn.classList.add('flag-btn-true');
-            } else {
+        } else {
             btn.classList.add('flag-btn-false');
         }
     });
-       if (currentFlagIndex >= maxQuestions - 1) {        
+    if (currentFlagIndex >= maxQuestions - 1) {
         endGame();
     } else {
-    nextButton.classList.remove('hide');
-    restartButton.classList.remove('hide');
+        nextButton.classList.remove('hide');
+        restartButton.classList.remove('hide');
     }
 }
 
 // Increment score by 1 if answer correct
-function incrementScore() {    
+function incrementScore() {
     let previousScore = parseInt(scoreTally.innerText);
     scoreTally.innerText = ++previousScore;
 }
 
 // Go to next question and increment question tally number (n/20)
-function setNextQuestion() {    
+function setNextQuestion() {
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
-    incrementQuestionTally();    
+    incrementQuestionTally();
 }
 
 function incrementQuestionTally() {
     let previousQuestionTally = parseInt(questionTally.innerText);
-    questionTally.innerText = ++previousQuestionTally;  
+    questionTally.innerText = ++previousQuestionTally;
 }
 
 // Clears green and red background colour from answer buttons for next question
@@ -166,7 +166,7 @@ function resetAnswerButtons() {
 function endGame() {
     nextButton.classList.add('hide');
     restartButton.classList.add('hide');
-    scoreMessageDiv.classList.remove('hide');    
-    totalScore.innerText = document.getElementById('score-tally').innerText;    
+    scoreMessageDiv.classList.remove('hide');
+    totalScore.innerText = document.getElementById('score-tally').innerText;
 }
 // *** END OF CODE ***
