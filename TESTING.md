@@ -2,49 +2,29 @@
 
 Return back to the [README.md](README.md) file.
 
-
 ## Code Validation
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### HTML
 
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate my HTML file.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Result:
 
-- If you are copying/pasting your HTML code, use this link: <https://validator.w3.org/#validate_by_input>
-- (*recommended*) If you are using the live deployed site pages, use this link: <https://validator.w3.org/#validate_by_uri>
+- Pass: No Errors.
 
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- <https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fname-the-flag-game%2Findex.html>
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fname-the-flag-game%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fname-the-flag-game%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fname-the-flag-game%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
+![html-validator](documentation/html-validator.png)
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Result:
+
+- Pass: No Errors (one warning about imported fonts).
+
+![CSS Validation One](documentation/css-validate-one.png)
+
+![CSS Validation One](documentation/css-validate-two.png)
 
 - If you are copying/pasting your HTML code, use this link: <https://jigsaw.w3.org/css-validator/#validate_by_input>
 - (*recommended*) If you are using the live deployed site, use this link: <https://jigsaw.w3.org/css-validator/#validate_by_uri>
