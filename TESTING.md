@@ -107,7 +107,7 @@ Results for mobile devices are all over 90%
 
 ![mobile test](documentation/lhouse-mobile.png)
 
-Results for desktop devices are all over 90%
+Results for desktop devices are 90% and above
 
 ![desktop test](documentation/lhouse-desktop.png)
 
