@@ -83,7 +83,7 @@ Results for mobile devices are 91% and above.
 
 ![mobile test](documentation/lhouse-mobile.png)
 
-Reesults for desktop devices are 90% and above.
+Results for desktop devices are 90% and above.
 
 ![desktop test](documentation/lhouse-desktop.png)
 
@@ -107,42 +107,24 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 
 ## Bugs
 
-- Issue: When clicking on Restart or Play Again, a new flag was displayed but the 3 answer buttons were not active when clicked.
+- **Issue:** When clicking on Restart or Play Again, a new flag was displayed but the 3 answer buttons were not active when clicked.
 
-  - Fix: In JS, regarding the `restartGame()` function, I had not called the `enableButtons()` function. I therefore added this at line 97, see:
+  - **Fix:** In JS, regarding the `restartGame()` function, I had not called the `enableButtons()` function. I therefore added this at line 97, see:
 
     ![screenshot](documentation/bug-1.png)
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+- **Issue:** When the question for Bosnia and Herzegovina was called, the flag did not display.
 
-    ![screenshot](documentation/bug02.png)
+    ![screenshot](documentation/bug-2.png)
 
-  - To fix this, I _____________________.
+- **Fix:** Further investigation with Dev Tools indicated that the file name for the webp image was not being converted properly ie. there was a space within the file name:
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+    ![screenshot](documentation/bug-3.png)
 
-    ![screenshot](documentation/bug03.png)
+I therefore amended the JS code at line 103 from `.replace()` to `.replaceAll()`  in order to capture all spaces in the related country name:
 
-  - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bug04.png)
-
-  - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bug04.png)
-
-  - To fix this, I _____________________.
+    ![screenshot](documentation/bug-4.png)
 
 ## Unfixed Bugs
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/unfixed-bug01.png)
-
-  - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
 
 There are no remaining bugs that I am aware of.
