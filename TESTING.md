@@ -104,11 +104,6 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 | | Click on Restart button | New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | | ![screenshot](documentation/defensive-testing/restart-game.png) |
 | |Click on answer button at Question 20/20 | Total Score Message and Score are displayed; Play Again button is displayed| Pass | | ![screenshot](documentation/defensive-testing/question20.png) |
 | | Click on Play Again button |New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | | ![screenshot](documentation/defensive-testing/play-again.png) |
-| |  | | Pass | |  |
-| |  | | Pass | |  |
-
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Bugs
 
