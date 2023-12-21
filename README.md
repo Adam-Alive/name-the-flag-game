@@ -90,6 +90,8 @@ The following features would add to the user experience in future:
   - A score of 20/20 could display a fun and congratulatory message, perhaps with an animation or video with flags flying or a large crowd waving flags.
 - Fun Facts
   - After each correct answer, a message displays the name of the correct country's capital city e.g. "Did you know that the capital of Venezuela is Caracas?"
+- More Flags
+  - Since this is a student project, I have used 55 flags to give a genuine sense of a random game but have not included flags of all countries, about 200. In future, I could use an API to access a database of world flags.
 
 ## Tools & Technologies Used
 
