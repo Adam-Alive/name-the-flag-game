@@ -117,7 +117,7 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 
     ![screenshot](documentation/bug-2.png)
 
-- **Fix:** Further investigation with Dev Tools indicated that the file name for the webp image was not being converted properly ie. there was a space within the file name:
+- **Fix:** Further investigation with Dev Tools indicated that the file name for the webp image was not being converted properly ie. there was a space after `and` within the file name:
 
     ![screenshot](documentation/bug-3.png)
 
@@ -133,7 +133,7 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 
     ![screenshot](documentation/bug-5.png)
 
-  - **Fix:** In the data.js file, which contains the dictionary, I had not included Armenia within the array after `flag` and this has now been corrected:
+  - **Fix:** In the data.js file, which contains the dictionary, I had not included Armenia within the array after `flag:` and this has now been corrected:
 
     ![screenshot](documentation/bug-6.png)
 
