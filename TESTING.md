@@ -107,23 +107,11 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 
 ## Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- Issue: When clicking on Restart or Play Again, a new flag was displayed but the 3 answer buttons were not active when clicked.
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+  - Fix: In JS, regarding the `restartGame()` function, I had not called the `enableButtons()` function. I therefore added this at line 97, see:
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
-
-    ![screenshot](documentation/bug01.png)
-
-  - To fix this, I _____________________.
+    ![screenshot](documentation/bug-1.png)
 
 - JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
 
@@ -151,43 +139,10 @@ Make sure to include any necessary steps you've implemented to fix the bug(s) as
 
 ## Unfixed Bugs
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
     ![screenshot](documentation/unfixed-bug01.png)
 
   - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/unfixed-bug02.png)
-
-  - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/unfixed-bug03.png)
-
-  - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 There are no remaining bugs that I am aware of.
