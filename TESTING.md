@@ -16,7 +16,7 @@ Result:
 
 ### CSS
 
-I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
 
 Result:
 
@@ -28,7 +28,19 @@ Result:
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+I have used the recommended [JShint Validator](https://jshint.com) to validate each of my JS files.
+
+Result for script.js:
+
+- Pass: No Errors (note about flagData variable which is the dictionary in data.js).
+
+![JS Validation](documentation/js-validator.png)
+
+Result for data.js:
+
+- Pass: No Errors (note about flagData variable which is the dictionary).
+
+![JS Validation](documentation/js2-validator.png)
 
 ## Browser Compatibility
 
@@ -103,11 +115,11 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-Results for mobile devices are all over 90%
+Results for mobile devices are 91% and above.
 
 ![mobile test](documentation/lhouse-mobile.png)
 
-Results for desktop devices are 90% and above
+Reesults for desktop devices are 90% and above.
 
 ![desktop test](documentation/lhouse-desktop.png)
 
