@@ -1,6 +1,7 @@
 /* jshint esversion: 11 */
 
 // Questions data
+// Total number of questions = 55
 const flagData = [
     {
         flag: 'Burkina Faso',
