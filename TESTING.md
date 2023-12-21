@@ -54,7 +54,6 @@ I tested each browser on the homepage and at each stage of the game and have pro
 | Edge | ![screenshot](documentation/edge.png) |  Works as expected |
 | Safari | ![screenshot](documentation/safari.png) | Works as expected |
 
-
 ## Responsiveness
 
 I deployed the project early on and tested on three of my own devices throughout the development process:
@@ -73,7 +72,6 @@ I tested the responsiveness of the homepage and each stage of the game and have 
 | Tablet (DevTools) | ![screenshot](documentation/ipad.png) | Works as expected |
 | MacBook Air (own) | ![screenshot](documentation/macbook-air.png) | Works as expected |
 | HP Desktop (own) | ![screenshot](documentation/hp-desktop.png) | Works as expected|
-
 
 ## Lighthouse Audit
 
@@ -126,7 +124,7 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
     ![screenshot](documentation/bug-4.png)
 
     The flag now displays correctly:
-    
+
     ![screenshot](documentation/defensive-testing/question2.png)
 
 - **Issue:** When the question for Armenia was called, the flag did not display.
