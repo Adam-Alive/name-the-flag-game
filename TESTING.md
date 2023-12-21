@@ -97,18 +97,19 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | |
 | | Hover over Start button | Start button background colour (bgc) will turn light blue to indicate active.| Pass |jjj | jj |
-| | Click on Start button | Question 1/20 is displayed with a flag image and 3 answer buttons. | Pass | nn| nn|
-| | Hover over any answer button | Answer button bgc will turn light blue to indicate active.| Pass | nn| nn|
-| | Click on correct answer button | Correct answer button bgc will turn green; other 2 answer buttons will turn red; score will increment by 1; Next and Restart buttons will display.| Pass | nn| nn |
-| | Hover over Next button  | Next button bgc will turn light blue to indicate active.| Pass | nn| nn |
-| | Click on Next button|Question 2/20 is displayed (and so on) with a new flag image and 3 answer buttons.  | Pass | nn| nn |
-| | Click on incorrect answer button. |Incorrect answer button bgc will turn red; second incorrect answer button bgc will turn red; correct answer button bgc will turn green; score does not change; Next and Restart buttons will display.| Pass | nn| nn |
-| | Hover over Restart button | Restart button bgc will turn light blue to indicate active. | Pass | nn| nn |
-| | Click on Restart button | New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | nn| nn |
-| |Click on answer button at Question 20/20 | Total Score Message and Score are displayed; Play Again button is displayed| Pass | nn| nn |
-| | Click on Play Again button |New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | nn| nn |
-| |  | | Pass | nn| nn |
-| |  | | Pass | nn| nn |
+| | Click on Start button | Question 1/20 is displayed with a flag image and 3 answer buttons. | Pass | | |
+| | Hover over any answer button | Answer button bgc will turn light blue to indicate active.| Pass | | |
+| | Click on correct answer button | Correct answer button bgc will turn green; other 2 answer buttons will turn red; score will increment by 1; Next and Restart buttons will display.| Pass | | |
+| | Hover over Next button  | Next button bgc will turn light blue to indicate active.| Pass | |  |
+| | Click on Next button|Question 2/20 is displayed (and so on) with a new flag image and 3 answer buttons.  | Pass | | |
+| | Click on incorrect answer button. |Incorrect answer button bgc will turn red; second incorrect answer button bgc will turn red; correct answer button bgc will turn green; score does not change; Next and Restart buttons will display.| Pass | |  |
+| | Hover over Restart button | Restart button bgc will turn light blue to indicate active. | Pass | |  |
+| | Click on Restart button | New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | |  |
+| |Click on answer button at Question 20/20 | Total Score Message and Score are displayed; Play Again button is displayed| Pass | |  |
+| | Hover over Play Again button | Play Again button bgc will turn light blue to indicate active. | Pass | |  |
+| | Click on Play Again button |New flag will display with 3 answer buttons; Question 1/20 is displayed; Score 0 is displayed.| Pass | |  |
+| |  | | Pass | |  |
+| |  | | Pass | |  |
 
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
