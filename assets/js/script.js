@@ -87,7 +87,7 @@ function startGame() {
     resetAnswerButtons();
 }
 
-// *** Reset the dataset and shuffle again?? *** 
+// Reset to question 1/20 and Score = 0
 function resetGame() {
     restartButton.classList.add('hide');
     nextButton.classList.add('hide');
