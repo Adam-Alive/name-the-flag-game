@@ -121,10 +121,22 @@ All stages of the game are played on the homepage with stages hidden / unhidden 
 
     ![screenshot](documentation/bug-3.png)
 
-I therefore amended the JS code at line 103 from `.replace()` to `.replaceAll()`  in order to capture all spaces in the related country name:
+    I therefore amended the JS code at line 103 from `.replace()` to `.replaceAll()`  in order to capture all spaces in the related country name:
 
     ![screenshot](documentation/bug-4.png)
 
+    The flag now displays correctly:
+    
+    ![screenshot](documentation/defensive-testing/question2.png)
+
+- **Issue:** When the question for Armenia was called, the flag did not display.
+
+    ![screenshot](documentation/bug-5.png)
+
+  - **Fix:** In the data.js file, which contains the dictionary, I had not included Armenia within the array after `flag` and this has now been corrected:
+
+    ![screenshot](documentation/bug-6.png)
+
 ## Unfixed Bugs
 
-There are no remaining bugs that I am aware of.
+There are no remaining bugs to my knowledge.
