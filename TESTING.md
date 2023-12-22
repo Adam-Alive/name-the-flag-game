@@ -48,7 +48,7 @@ Result for data.js:
 
 I've tested my deployed project on Chrome, Edge and Safari to check for compatibility issues.
 
-I tested each browser on the homepage and at each stage of the game and have provided a summary of these tests below with a screenshot of the homepage or game-play.
+I tested each browser on the homepage, and at each stage of the game, and have provided a summary of these tests below with a screenshot of the homepage or game-play.
 
 | Browser | Home / Game | Notes |
 | --- | --- | --- |
