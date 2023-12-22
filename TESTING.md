@@ -8,6 +8,8 @@ Return back to the [README.md](README.md) file.
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate my HTML file.
 
+Please note that Codeanywhere automatically adds a `/` at the end of `<link>` tags and I deleted these when using the W3 HTML validator.
+
 Result:
 
 - Pass: No Errors.
