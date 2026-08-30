@@ -151,8 +151,7 @@ function incrementQuestionTally() {
 // Clears green and red background colour from answer buttons for next question
 function resetAnswerButtons() {
     flagButtons.forEach(btn => {
-        btn.classList.remove('flag-btn-true');
-        btn.classList.remove('flag-btn-false');
+        btn.classList.remove('flag-btn-true', 'flag-btn-false');
     });
 }
 
@@ -162,6 +161,6 @@ function endGame() {
     nextButton.classList.add('hide');
     restartButton.classList.add('hide');
     scoreMessageDiv.classList.remove('hide');
-    totalScore.innerText = document.getElementById('score-tally').innerText;
+    totalScore.innerText = scoreTally.innerText;
 }
 // *** END OF CODE ***
