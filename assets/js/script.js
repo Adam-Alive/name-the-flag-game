@@ -5,9 +5,6 @@
 // DOM Elements
 const startButton = document.getElementById('start-btn');
 const flagButtons = document.querySelectorAll('.flag-btn');
-const flagOneButton = document.getElementById('flag-one');
-const flagTwoButton = document.getElementById('flag-two');
-const flagThreeButton = document.getElementById('flag-three');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const playAgainButton = document.getElementById('play-again-btn');
