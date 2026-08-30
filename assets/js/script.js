@@ -60,15 +60,11 @@ function userSelectedButton(e) {
 }
 
 function disableButtons() {
-    flagButtons.forEach(btn => {
-        btn.classList.add('disable');
-    });
+    flagButtons.forEach(btn => btn.classList.add('disable'));
 }
 
 function enableButtons() {
-    flagButtons.forEach(btn => {
-        btn.classList.remove('disable');
-    });
+    flagButtons.forEach(btn => btn.classList.remove('disable'));
 }
 
 // Start game
