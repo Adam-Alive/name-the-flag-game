@@ -22,9 +22,9 @@ const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
 
 // Game State Variables
-let shuffledFlagData;
+let shuffledFlagData = [];
 let currentFlagIndex = 0;
-let maxQuestions = 20;
+const maxQuestions = 20;
 // Initialize maximum questions in DOM
 questionMax.forEach(span => {
     span.innerText = maxQuestions;
