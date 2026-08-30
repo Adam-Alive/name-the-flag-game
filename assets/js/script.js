@@ -86,7 +86,7 @@ function startGame() {
     scoreMessageDiv.classList.add('hide');
     flagImage.style.border = '1px solid rgb(10, 13, 17)';
     flagImage.alt = 'Flag image selected randomly for each question';
-    shuffledFlagData = flagData.sort(() => Math.random() - 0.5);
+    shuffledFlagData = shuffleArray(flagData);
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
@@ -96,8 +96,8 @@ function startGame() {
 function resetGame() {
     restartButton.classList.add('hide');
     nextButton.classList.add('hide');
-    questionTally.innerText = `1`;
-    scoreTally.innerText = `0`;
+    questionTally.innerText = '1';
+    scoreTally.innerText = '0';
     currentFlagIndex = 0;
     enableButtons();
     startGame();
@@ -105,7 +105,9 @@ function resetGame() {
 
 // Display flag image for question
 function showFlagQuestion() {
-    flagImage.src = `assets/images/${flagData[currentFlagIndex].flag.toLowerCase().replaceAll(' ', '-')}.webp`;
+    const currentFlag = shuffledFlagData[currentFlagIndex];
+    const flagNameFormatted = currentFlag.flag.toLowerCase().replaceAll(' ', '-');
+    flagImage.src = `assets/images/${flagNameFormatted}.webp`;
 }
 
 //Display answer options on 3 buttons and assign answer value to each
