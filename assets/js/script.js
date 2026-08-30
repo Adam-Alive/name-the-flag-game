@@ -2,7 +2,7 @@
 
 // * VARIABLES * //
 //
-// Constant variables related to the DOM
+// DOM Elements
 const startButton = document.getElementById('start-btn');
 const flagButtons = document.querySelectorAll('.flag-btn');
 const flagOneButton = document.getElementById('flag-one');
@@ -21,10 +21,11 @@ const scoreTally = document.getElementById('score-tally');
 const scoreMessageDiv = document.getElementById('score-message');
 const totalScore = document.getElementById('total-score');
 
-// Variables for game set-up and play
+// Game State Variables
 let shuffledFlagData;
 let currentFlagIndex = 0;
 let maxQuestions = 20;
+// Initialize maximum questions in DOM
 questionMax.forEach(span => {
     span.innerText = maxQuestions;
 });
