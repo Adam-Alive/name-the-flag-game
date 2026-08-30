@@ -37,9 +37,7 @@ restartButton.addEventListener('click', resetGame);
 playAgainButton.addEventListener('click', resetGame);
 
 flagButtons.forEach(btn => {
-    btn.addEventListener('click', function (e) {
-        userSelectedButton(e);
-    });
+    btn.addEventListener('click', userSelectedButton);
 });
 
 nextButton.addEventListener('click', () => {
