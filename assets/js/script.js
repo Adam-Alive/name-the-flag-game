@@ -131,8 +131,8 @@ function selectAnswer() {
 
 // Increment score by 1 if answer correct
 function incrementScore() {
-    let previousScore = parseInt(scoreTally.innerText);
-    scoreTally.innerText = ++previousScore;
+    let previousScore = parseInt(scoreTally.innerText, 10) || 0;
+    scoreTally.innerText = previousScore + 1;
 }
 
 // Go to next question and increment question tally number (n/20)
@@ -144,8 +144,8 @@ function setNextQuestion() {
 }
 
 function incrementQuestionTally() {
-    let previousQuestionTally = parseInt(questionTally.innerText);
-    questionTally.innerText = ++previousQuestionTally;
+    let previousQuestionTally = parseInt(questionTally.innerText, 10) || 0;
+    questionTally.innerText = previousQuestionTally + 1;
 }
 
 // Clears green and red background colour from answer buttons for next question
