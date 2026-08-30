@@ -110,15 +110,17 @@ function showFlagQuestion() {
     flagImage.src = `assets/images/${flagNameFormatted}.webp`;
 }
 
-//Display answer options on 3 buttons and assign answer value to each
+// Display answer options dynamically across available buttons
 function showFlagAnswers() {
-    flagData[currentFlagIndex].options.sort(() => Math.random() - 0.5);
-    flagOneButton.innerText = flagData[currentFlagIndex].options[0].text;
-    flagTwoButton.innerText = flagData[currentFlagIndex].options[1].text;
-    flagThreeButton.innerText = flagData[currentFlagIndex].options[2].text;
-    flagOneButton.dataset.correct = flagData[currentFlagIndex].options[0].correct;
-    flagTwoButton.dataset.correct = flagData[currentFlagIndex].options[1].correct;
-    flagThreeButton.dataset.correct = flagData[currentFlagIndex].options[2].correct;
+    const currentFlag = shuffledFlagData[currentFlagIndex];
+    const shuffledOptions = shuffleArray(currentFlag.options);
+    // Dynamic allocation using loop index
+    flagButtons.forEach((btn, index) => {
+        if (shuffledOptions[index]) {
+            btn.innerText = shuffledOptions[index].text;
+            btn.dataset.correct = shuffledOptions[index].correct;
+        }
+    });
 }
 
 // Assign background colour (bgc) to buttons according to correct/incorrect value
