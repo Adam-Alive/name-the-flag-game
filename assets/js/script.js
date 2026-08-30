@@ -128,13 +128,10 @@ function showFlagAnswers() {
 // Click incorrect button === red bgc colour and show correct button === green bgc
 function selectAnswer() {
     flagButtons.forEach(btn => {
-        let answer = btn.dataset.correct;
-        if (answer === 'true') {
-            btn.classList.add('flag-btn-true');
-        } else {
-            btn.classList.add('flag-btn-false');
-        }
+        const isCorrect = btn.dataset.correct === 'true';
+        btn.classList.add(isCorrect ? 'flag-btn-true' : 'flag-btn-false');
     });
+    
     if (currentFlagIndex >= maxQuestions - 1) {
         endGame();
     } else {
