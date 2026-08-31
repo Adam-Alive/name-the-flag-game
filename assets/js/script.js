@@ -47,6 +47,20 @@ nextButton.addEventListener('click', () => {
 
 // * FUNCTIONS * //
 //
+// Function to format image filenames consistently
+function getFlagImgSrc(flagName) {
+  const flagNameFormatted = flagName.toLowerCase().replaceAll(' ', '-');
+  return `assets/images/${flagNameFormatted}.webp`;
+}
+
+// Preload the specific subset of images selected for this round
+function preloadImages(flagArray) {
+  flagArray.forEach(item => {
+    const img = new Image();
+    img.src = getFlagImgSrc(item.flag);
+  });
+}
+
 // Random shuffle (Fisher-Yates Algorithm)
 function shuffleArray(array) {
     const arr = [...array];
@@ -83,7 +97,11 @@ function startGame() {
     scoreMessageDiv.classList.add('hide');
     flagImage.style.border = '1px solid rgb(10, 13, 17)';
     flagImage.alt = 'Flag image selected randomly for each question';
-    shuffledFlagData = shuffleArray(flagData);
+    
+    // Shuffle all data, slice it to the round length, then preload assets
+    shuffledFlagData = shuffleArray(flagData).slice(0, maxQuestions);
+    
+    preloadImages(shuffledFlagData);
     showFlagQuestion();
     showFlagAnswers();
     resetAnswerButtons();
@@ -103,8 +121,7 @@ function resetGame() {
 // Display flag image for question
 function showFlagQuestion() {
     const currentFlag = shuffledFlagData[currentFlagIndex];
-    const flagNameFormatted = currentFlag.flag.toLowerCase().replaceAll(' ', '-');
-    flagImage.src = `assets/images/${flagNameFormatted}.webp`;
+    flagImage.src = getFlagImgSrc(currentFlag.flag);
 }
 
 // Display answer options dynamically across available buttons
