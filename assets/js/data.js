@@ -1,7 +1,7 @@
 /* jshint esversion: 11 */
 
 // Questions data
-// Total number of questions = 55
+// Total number of questions = 81
 const flagData = [
     {
         flag: 'Burkina Faso',
@@ -441,6 +441,214 @@ const flagData = [
             { text: 'Sierra Leone', correct: true },
             { text: 'French Guiana', correct: false },
             { text: 'Nigeria', correct: false },
+        ]
+    },
+    {
+        flag: 'Argentina',
+        options: [
+            { text: 'Singapore', correct: false },
+            { text: 'Pakistan', correct: false },
+            { text: 'Argentina', correct: true },
+        ]
+    },
+    {
+        flag: 'Australia',
+        options: [
+            { text: 'Luxembourg', correct: false },
+            { text: 'Australia', correct: true },
+            { text: 'Kuwait', correct: false },
+        ]
+    },
+    {
+        flag: 'Brazil',
+        options: [
+            { text: 'Brazil', correct: true },
+            { text: 'Tunisia', correct: false },
+            { text: 'United Arab Emirates', correct: false },
+        ]
+    },
+    {
+        flag: 'Canada',
+        options: [
+            { text: 'Malta', correct: false },
+            { text: 'Canada', correct: true },
+            { text: 'Ethiopia', correct: false },
+        ]
+    },
+    {
+        flag: 'China',
+        options: [
+            { text: 'China', correct: true },
+            { text: 'Madagascar', correct: false },
+            { text: 'Iran', correct: false },
+        ]
+    },
+    {
+        flag: 'Croatia',
+        options: [
+            { text: 'Fiji', correct: false },
+            { text: 'Jordan', correct: false },
+            { text: 'Croatia', correct: true },
+        ]
+    },
+    {
+        flag: 'Czech Republic',
+        options: [
+            { text: 'Czech Republic', correct: true },
+            { text: 'Zambia', correct: false },
+            { text: 'Vietnam', correct: false },
+        ]
+    },
+    {
+        flag: 'Ecuador',
+        options: [
+            { text: 'Ecuador', correct: true },
+            { text: 'Namibia', correct: false },
+            { text: 'Nigeria', correct: false },
+        ]
+    },
+    {
+        flag: 'France',
+        options: [
+            { text: 'France', correct: true },
+            { text: 'Uganda', correct: false },
+            { text: 'Ivory Coast', correct: false },
+        ]
+    },
+    {
+        flag: 'Germany',
+        options: [
+            { text: 'Germany', correct: true },
+            { text: 'Finland', correct: false },
+            { text: 'Denmark', correct: false },
+        ]
+    },
+    {
+        flag: 'Hungary',
+        options: [
+            { text: 'Slovenia', correct: false },
+            { text: 'Hungary', correct: true },
+            { text: 'South Africa', correct: false },
+        ]
+    },
+    {
+        flag: 'India',
+        options: [
+            { text: 'Uzbekistan', correct: false },
+            { text: 'India', correct: true },
+            { text: 'Mozambique', correct: false },
+        ]
+    },
+    {
+        flag: 'Isle of Man',
+        options: [
+            { text: 'Isle of Man', correct: true },
+            { text: 'Belgium', correct: false },
+            { text: 'Oman', correct: false },
+        ]
+    },
+    {
+        flag: 'Italy',
+        options: [
+            { text: 'Malaysia', correct: false },
+            { text: 'Italy', correct: true },
+            { text: 'Mongolia', correct: false },
+        ]
+    },
+    {
+        flag: 'Jamaica',
+        options: [
+            { text: 'Jamaica', correct: true },
+            { text: 'Philippines', correct: false },
+            { text: 'Senegal', correct: false },
+        ]
+    },
+    {
+        flag: 'Nepal',
+        options: [
+            { text: 'Cambodia', correct: false },
+            { text: 'Botswana', correct: false },
+            { text: 'Nepal', correct: true },
+        ]
+    },
+    {
+        flag: 'New Zealand',
+        options: [
+            { text: 'Norway', correct: false },
+            { text: 'New Zealand', correct: true },
+            { text: 'Kazakhstan', correct: false },
+        ]
+    },
+    {
+        flag: 'Palau',
+        options: [
+            { text: 'Palau', correct: true },
+            { text: 'Slovakia', correct: false },
+            { text: 'Thailand', correct: false },
+        ]
+    },
+    {
+        flag: 'Palestine',
+        options: [
+            { text: 'Palestine', correct: true },
+            { text: 'Cameroon', correct: false },
+            { text: 'Bulgaria', correct: false },
+        ]
+    },
+    {
+        flag: 'Peru',
+        options: [
+            { text: 'Costa Rica', correct: false },
+            { text: 'Peru', correct: true },
+            { text: 'Mauritius', correct: false },
+        ]
+    },
+    {
+        flag: 'Portugal',
+        options: [
+            { text: 'Gabon', correct: false },
+            { text: 'Egypt', correct: false },
+            { text: 'Portugal', correct: true },
+        ]
+    },
+    {
+        flag: 'Spain',
+        options: [
+            { text: 'Spain', correct: true },
+            { text: 'Iceland', correct: false },
+            { text: 'Qatar', correct: false },
+        ]
+    },
+    {
+        flag: 'Tajikistan',
+        options: [
+            { text: 'Iraq', correct: false },
+            { text: 'Tajikistan', correct: true },
+            { text: 'Kenya', correct: false },
+        ]
+    },
+    {
+        flag: 'Ukraine',
+        options: [
+            { text: 'Switzerland', correct: false },
+            { text: 'Ukraine', correct: true },
+            { text: 'Romania', correct: false },
+        ]
+    },
+    {
+        flag: 'United Kingdom',
+        options: [
+            { text: 'Austria', correct: false },
+            { text: 'United Kingdom', correct: true },
+            { text: 'Laos', correct: false },
+        ]
+    },
+    {
+        flag: 'United States of America',
+        options: [
+            { text: 'Rwanda', correct: false },
+            { text: 'United States of America', correct: true },
+            { text: 'Algeria', correct: false },
         ]
     }
 ];
