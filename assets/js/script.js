@@ -114,6 +114,7 @@ function resetGame() {
     questionTally.innerText = '1';
     scoreTally.innerText = '0';
     currentFlagIndex = 0;
+    flagImage.removeAttribute('src');
     enableButtons();
     startGame();
 }
@@ -121,6 +122,7 @@ function resetGame() {
 // Display flag image for question
 function showFlagQuestion() {
     const currentFlag = shuffledFlagData[currentFlagIndex];
+    flagImage.removeAttribute('src');
     flagImage.src = getFlagImgSrc(currentFlag.flag);
 }
 
