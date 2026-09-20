@@ -190,4 +190,4 @@ function endGame() {
     scoreMessageDiv.classList.remove('hide');
     totalScore.innerText = scoreTally.innerText;
 }
-// *** END OF CODE ***
+// ** END OF CODE **
